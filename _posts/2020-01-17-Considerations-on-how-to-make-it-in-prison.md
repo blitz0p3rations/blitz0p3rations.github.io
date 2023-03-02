@@ -29,7 +29,5 @@ it's not about fighting skills but about the rules of the road, fight for honor 
 if you don't you will be fodder for everyone and dig your own grave
 
 
-Next move the payload in our web server.
 
-![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/img0.png)
 
