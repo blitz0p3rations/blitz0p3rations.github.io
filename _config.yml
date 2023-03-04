@@ -5,12 +5,12 @@ url                          : "http://blitz0p3rations.github.io" # the base hos
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : BLITZ 0p3rations 
+  title                      : BLITZ 0p3rations⚡
   description                  : >
-                               Barbarian Lethal Intelligence ThreatZ 0p3rations
+                               Barbarian Lethal Intelligence ThreatZ 0p3rations ⚡
 
 # Layout configuration
-  logo_path                  : "assets/img/high-voltage.svg" # path to logo file dactl.svg
+  logo_path                  : "assets/img/" # path to logo file dactl.svg
   search_path                :  "blitz0p3rations.github.io" #"yourgitusername.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
@@ -26,7 +26,7 @@ blog:
 
 # Author info
 author:
-  fullname                  : BLITZ 0p3rations
+  fullname                  : BLITZ 0p3rations ⚡
   rss                       : true # generate RSS feed and show it's icon in header
  # mail                      : your@email.com # change to your e-mail address
  # twitter                   : twitter-user-name
