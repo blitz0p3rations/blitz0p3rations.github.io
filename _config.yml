@@ -5,9 +5,9 @@ url                          : "http://blitz0p3rations.github.io" # the base hos
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : BLIT⚡ 0p3rations 
+  title                      : BLITZ 0p3rations 
   description                  : >
-                               Barbarian Lethal Intelligence Threat⚡ 0p3rations
+                               Barbarian Lethal Intelligence ThreatZ 0p3rations
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file dactl.svg
@@ -26,7 +26,7 @@ blog:
 
 # Author info
 author:
-  fullname                  : BLIT⚡ 0p3rations
+  fullname                  : BLITZ 0p3rations
   rss                       : true # generate RSS feed and show it's icon in header
  # mail                      : your@email.com # change to your e-mail address
  # twitter                   : twitter-user-name
