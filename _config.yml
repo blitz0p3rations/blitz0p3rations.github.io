@@ -10,7 +10,7 @@ blog:
                                Barbarian Lethal Intelligence ThreatZ 0p3rations
 
 # Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file dactl.svg
+  logo_path                  : "assets/img/high-voltage.svg" # path to logo file dactl.svg
   search_path                :  "blitz0p3rations.github.io" #"yourgitusername.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
