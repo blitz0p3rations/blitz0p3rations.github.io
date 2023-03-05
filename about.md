@@ -17,10 +17,7 @@ published: true
 {% endcapture %}
 
 {% include page/title.html title=page.title subtitle=page_subtitle %}
-
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/main/assets/img/leon.gif)
-
-
 Welcome to the Barbarian Lethal Intelligence ThreatZ Elite Force 0p3rations ⚡!
 The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood.
 
