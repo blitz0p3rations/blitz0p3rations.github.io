@@ -38,4 +38,7 @@ As one proceeds with the extradition some important policy points have to be res
 the request does not have to be added to a criminal case in progress, or a pronounced sentence, in the Italian state (principal of the ne bis in idem: not two times for the same thing).
 
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
