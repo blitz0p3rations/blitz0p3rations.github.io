@@ -18,10 +18,10 @@ published: true
 
 {% include page/title.html title=page.title subtitle=page_subtitle %}
 
-Welcome to the Barbarian Lethal Intelligence ThreatZ 0p3rations ⚡ Group!
+Welcome to the Barbarian Lethal Intelligence ThreatZ Elite Force 0p3rations ⚡!
 The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood.
 
-I'm a 22 years old Red teamer / Offensive Security Consultant and bug bounty hunter by night, in the future I would like to specialize in physical red teaming operations and geoplitcal Intelligence, looking for an opportunity in the Military field or the goverament sponsored sector.
+I'm a 22 years old Red teamer / Offensive Security Consultant and bug bounty hunter by night, in the future I would like to specialize in physical red teaming operations and geopolitcal Intelligence, looking for an opportunity in the Military field or the goverament sponsored sector.
 
 Cyberwar is here and I wanna take part of it.
 
