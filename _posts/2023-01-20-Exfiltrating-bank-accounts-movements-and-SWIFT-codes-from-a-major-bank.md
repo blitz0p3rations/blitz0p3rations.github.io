@@ -31,3 +31,7 @@ is 100% vulnerable, after which confirmation via OTP comes into play but easily 
 phishing, in one real scenario an APT would have devastated and destroyed them, 
 setting fire to their ashes and their credibility, I was satisfied with their 
 frightened faces but I wanted to continue to hurt them but unfortunately I don't have all this power hahaha.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
