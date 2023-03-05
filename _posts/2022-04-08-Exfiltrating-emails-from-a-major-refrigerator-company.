@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'Exfiltrating emails from a major refrigerator company'
+tags:
+  - Hacking
+
+hero: https://images.unsplash.com/photo-1561446121-3722d13bb0f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVmcmlnZXJhdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60
+overlay: blue
+---
+
+Exfiltrating emails from a major refrigerator company, I can not disclose the details of obvios reasons so a general explainantion is sufficient. {: .lead} <!–-break-–> 
+
+## Exfiltrating emails from a major refrigerator company
+
+during a penetration test engagement 
+relating to the external perimeter of one of the largest refrigeration companies,
+we noticed a domain relating to a site from Romania where an outdated version of a Postfix was exposed,
+from there we exfiltrated usernames and passwords using a SQLi , exchanges of recent emails and relating 
+to more than 10 years ago containing information and criticisms, and all the other DBs, at this point however 
+it was not enough for us and we wanted to definitively compromise the target, first we had to cpair where to 
+write and where the reverse shell ended that we always wanted to load using SQLi, but the permissions did not 
+allow us to do so until we tried to load using an exfiltrated user of an admin guy, from there we were able to 
+load a shell and act with root privileges on the target machine. The customer was happy above all because he 
+disliked his Romanian colleagues and was only waiting for their misstep to attack them, we were glad to have helped him.
