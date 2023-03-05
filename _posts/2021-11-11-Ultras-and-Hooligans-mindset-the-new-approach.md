@@ -35,3 +35,8 @@ groups are sponsored by the state and do their dirty work by eliminating politic
 The old look does not share the strategies of the new movements, but either they adapt or they 
 are destined to be overwhelmed by the new, more violent and unethical groups, unfortunately in 
 the future they will have more and more space and even the last crumb of their romanticism will vanish.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
+
