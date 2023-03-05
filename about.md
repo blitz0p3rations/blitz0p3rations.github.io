@@ -36,3 +36,7 @@ In the evening I enjoy:
 
 Contact me if you want to join the group.
 </div>
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
