@@ -20,3 +20,7 @@ some labs of the course and exploits easily other machines, the BoF can be insid
 who have never faced it but in the end it is vanilla and linear, considering that it is 90% metasploit
 the exam is only the ability to manage a somewhat complex PT, for beginners it can be stimulating and nice to deal with, 
 I only suggest it to them for others better to tack on something else.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
