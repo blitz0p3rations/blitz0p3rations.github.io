@@ -27,5 +27,8 @@ that explains a vast variety of arsenal and techniques, it also takes into consi
 the best solution based on the target and its position, I expected a more accurate 
 description on the practical part but I think can be considered satisfactory.
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
 
