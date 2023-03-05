@@ -15,3 +15,6 @@ Some intersing videos. {: .lead} <!–-break-–>
 - https://www.youtube.com/watch?v=S9BxH8N9dqc&ab_channel=DeviantOllam
 - https://www.youtube.com/watch?v=8I21RlpKWbc&ab_channel=DeviantOllam
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
