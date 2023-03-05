@@ -71,3 +71,8 @@ For chatting could be usefull using OPSEC methodology like download a game, from
 OR if you want to do Burner Phone as a Service hahaha just buy used phones from Market place for cheap, then order mint $1 test for a week sim cards. Then make up a phone number using a new number from voice.google.com, then sell them. locally. You can buy a 3 month card cheap for $15/month of go week to week with $1 to try it out . You can buy them 10 at a time from amazon.
 
 Last extreme solution, buy a stolen unlocked dumb phone that you just dump a sim card of which you can pick up pretty much anywhere.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
+
