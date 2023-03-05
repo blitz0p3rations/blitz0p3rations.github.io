@@ -63,3 +63,8 @@ bombed and repressed by a state like Israel, it is known that the news does not 
 on the other hand if practically all the world is in favor and recognizes the Palestinian state and the only ones who vote against in the 
 UN assemblies are the USA, Israel and Europe understands Western corruption well, where the liberation of the Jews is celebrated 
 every year but neglecting how the Jews today treat Palestine with the same regime of Apartheid
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
+
