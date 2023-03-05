@@ -22,3 +22,7 @@ yourself exploiting business logic flows.
 The time you have at your disposal is short, you have to know how to quickly 
 recognize and take advantage of the entry point, you will have the pressure on you it
 is not a simple exam but the satisfaction of passing it is unmatched, I recommend it to everyone.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
