@@ -50,5 +50,8 @@ if you look stupid and calm down and admit you're wrong and look and pretend you
 to act with adrenaline in your body.
 
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
 
