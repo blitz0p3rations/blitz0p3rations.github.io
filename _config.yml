@@ -5,7 +5,7 @@ url                          : "http://blitz0p3rations.github.io" # the base hos
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : BLITZ EF 0p3rations⚡
+  title                      : BLITZ EF 0p3rations
   description                  : >
                                Barbarian Lethal Intelligence ThreatZ Elite Force 0p3rations ⚡
 
@@ -26,7 +26,7 @@ blog:
 
 # Author info
 author:
-  fullname                  : BLITZ 0p3rations ⚡
+  fullname                  : BLITZ EF 0p3rations ⚡
   rss                       : true # generate RSS feed and show it's icon in header
  # mail                      : your@email.com # change to your e-mail address
  # twitter                   : twitter-user-name
