@@ -21,4 +21,7 @@ with the machinery, the impact is critical considering the environment but
 I am as always amazed by how easy it is to do this, even one who is just starting out could have done 
 it and fortunately that the vulnerability has not been exploited by malicious actors.
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
