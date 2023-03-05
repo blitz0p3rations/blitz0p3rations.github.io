@@ -43,3 +43,8 @@ This Terms of Use policy applies only to blitz0p3rations.github.io and the produ
 
 ## SPAMMING POLICY
 Gathering email addresses from blitz0p3rations.github.io through harvesting or automated means is prohibited. Posting or transmitting unauthorized or unsolicited advertising, promotional materials, or any other forms of solicitation to other users is prohibited.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
+
