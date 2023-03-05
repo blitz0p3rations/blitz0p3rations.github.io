@@ -29,5 +29,8 @@ it's not about fighting skills but about the rules of the road, fight for honor 
 if you don't you will be fodder for everyone and dig your own grave
 
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
 
