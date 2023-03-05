@@ -35,4 +35,7 @@ Iran has a supreme coucnil for cyberspace aims to exploit enemmeis and protect t
 
 It has formed also non governement groups like Mabna and hacking group like Charming Kitten and OilRig.
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
 
