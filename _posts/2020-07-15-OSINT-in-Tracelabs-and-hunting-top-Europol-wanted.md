@@ -27,3 +27,6 @@ potential patterns, also sometimes EUROPOL puts a bounty on them, it helps me to
 increase my knowledge and feeds my curiosity about the world of crime.
 
 
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
