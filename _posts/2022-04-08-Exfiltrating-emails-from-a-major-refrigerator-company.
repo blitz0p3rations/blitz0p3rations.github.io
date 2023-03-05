@@ -22,3 +22,7 @@ write and where the reverse shell ended that we always wanted to load using SQLi
 allow us to do so until we tried to load using an exfiltrated user of an admin guy, from there we were able to 
 load a shell and act with root privileges on the target machine. The customer was happy above all because he 
 disliked his Romanian colleagues and was only waiting for their misstep to attack them, we were glad to have helped him.
+
+<script>
+    document.getElementsByTagName('body')[0].classList.add('glitch');
+</script>
