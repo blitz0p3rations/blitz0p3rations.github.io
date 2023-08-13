@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Project Prophesy: CIA's Geopolitical Crystal Ball'
+title: 'Project Prophesy: CIA s Geopolitical Crystal Ball'
 tags:
   - intelligence
   - geopolitical
