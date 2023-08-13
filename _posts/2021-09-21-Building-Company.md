@@ -1,0 +1,51 @@
+---
+layout: post
+title: 'Building Company External PT'
+tags:
+ - web
+ - real-engagement
+hero: 
+overlay: red
+---
+
+No images (image for the step by step PoC are essential as evidence but will not be provided
+) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+
+# building Company
+
+## Type of activity and objectives
+The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
+## Scope of evaluation
+The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
+## Executive Summary
+The assessment of the external infrastructure revealed two notable findings: CVE-2009-2265 and User Enumeration vulnerabilities. The CVE-2009-2265 vulnerability exposes a potential security risk in the system due to its susceptibility to arbitrary code execution. This could potentially lead to unauthorized access and manipulation of sensitive data if exploited by malicious actors.
+
+Additionally, the User Enumeration vulnerability allows attackers to gain insights into valid usernames within the system. While seemingly innocuous, this information could be exploited as part of a larger attack, such as brute-force password guessing.
+## Finding Summary
+- CVE-2009-2265
+- User Enumeration
+## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+### CVE-2009-2265 
+- CVSS Vector: CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N
+#### Proof of Concept (PoC) 
+This exploit allows unauthenticated users to upload files and gain remote code execution on the target host. The vulnerability exist in FCKeditor and the path to upload files is unrestricted.
+
+By modifying the follwing exploit https://github.com/0xConstant/CVE-2009-2265 it was possbile to gain a RCE on the target system, the user running the service was root so the team in order to test the time-response of the SOC uploaded a standard binary of Mimikatz.
+#### Remediations
+- Update ColdFusion: Ensure that your ColdFusion installation is updated to a version that includes the fix for CVE-2009-2265. Adobe, the company behind ColdFusion, has released patches and security updates to address this vulnerability. Apply the latest available patches or updates to your ColdFusion server.
+- Implement Web Application Firewall (WAF): Consider implementing a WAF that can help detect and block malicious requests attempting to exploit vulnerabilities like CVE-2009-2265. A WAF can provide an additional layer of protection for your web applications.
+### User Enumeration
+- CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+#### Proof of Concept (PoC) 
+During the assessment of the HR web application, it was discovered that the application exposed a list of all users within the target organization. The information was accessible without requiring any form of authentication or proper authorization.
+
+To verify the presence of this vulnerability, the following URL paths were tested:
+
+- **/users**
+- **/employees**
+- **/directory**
+- **/staff**
+Each of these URLs returned a list of users, potentially including sensitive information such as names, email addresses, and other employee details. This exposure of user information could have serious privacy implications and could potentially be exploited by attackers for various malicious purposes.
+#### Remediations
+- Add a layer of authentication.
+
