@@ -30,7 +30,7 @@ A missing HTTP header (X-Frame-Options) in the target web application has left c
 Here's a simple Proof of Concept (PoC) for the Clickjacking attack:
 
 1. Create an HTML page that contains your legitimate content. Let's call it "legit.html":
-```html
+`
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,10 +41,10 @@ Here's a simple Proof of Concept (PoC) for the Clickjacking attack:
     <p>This is some important content.</p>
 </body>
 </html>
-```
+`
 
 1. Create another HTML page that contains an invisible iframe that overlays the legitimate content. Let's call it "malicious.html":
-```html
+`
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@ Here's a simple Proof of Concept (PoC) for the Clickjacking attack:
     </script>
 </body>
 </html>
-```
+`
 
 In this PoC, the "malicious.html" page contains an invisible iframe that loads the "legit.html" page. The attacker overlays a button on top of the iframe that seems harmless to the user. When the user clicks the button, they are actually clicking on the button in the overlaying "malicious.html" page, triggering the "performAttack()" function that shows an alert.
 
