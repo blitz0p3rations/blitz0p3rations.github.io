@@ -36,24 +36,20 @@ Here is the breakdown of the PoC:
 
 1. **return Parameter:**
    The payload injected into the "return" parameter:
-   ```
-   Applicationcrh3y</script><script>alert(1)</script>lve4ge6x57u
-   ```
-   This payload aims to execute the JavaScript code `alert(1)` when the page loads. It takes advantage of the vulnerability to inject malicious scripts into the parameter.
+   `Applicationcrh3y</script><script>alert(1)</script>lve4ge6x57u`
+   This payload aims to execute the JavaScript code `alert(1)` when the page loads. 
+   It takes advantage of the vulnerability to inject malicious scripts into the 
+   parameter.
 
 2. **object Parameter:**
    The payload injected into the "object" parameter:
-   ```
-   <img src=a onerror=alert(1)>
-   ```
-   This payload injects an image tag with an `onerror` attribute containing the JavaScript code `alert(1)`. This code is triggered if the image fails to load.
+   `<img src=a onerror=alert(1)> `
+   This payload injects an image tag with an `onerror` attribute containing the 
+   JavaScript code `alert(1)`. This code is triggered if the image fails to load.
 
 3. **forms Parameter:**
    The payload injected into the "forms" parameter of a POST request:
-   ```
-   {"loginForm":{"loadTarget":"hkgps<img src=a
-   onerror=alert(1)>g7w17","stusername":"cv","sppassword":"vc","ntuseraction":"login"}}
-   ```
+   *{"loginForm":{"loadTarget":"hkgps<img src=a onerror=alert(1)>g7w17","stusername":"cv","sppassword":"vc","ntuseraction":"login"}}*
    Similar to the "object" parameter, this payload injects an image tag with an `onerror` attribute containing the JavaScript code `alert(1)`.
 
 The provided PoC demonstrates how an attacker can exploit the XSS vulnerability to execute arbitrary JavaScript code within the context of the application's pages. This could lead to various security risks, including stealing user credentials, session hijacking, defacement, or spreading malware.
