@@ -15,13 +15,9 @@ Using cloud-rented GPUs (Graphics Processing Units) to perform highly resource-i
 The initial step involves setting up an account on https://cloud.vast.ai/. After creating your account, proceed to log in and add credit to your account using Stripe as the chosen payment method.
 
 Subsequently, on your local machine, generate an SSH key using the command:
-```
-ssh-keygen -t rsa
-```
+`ssh-keygen -t rsa`
 To ensure the secret key is actively loaded, employ the following commands:
-```
-ssh-add; ssh-add -l
-```
+`ssh-add; ssh-add -l`
 
 Following this, copy the contents of the freshly generated public key and insert it into the designated public key section within the VAST AI platform.
 
@@ -49,9 +45,7 @@ Feel free to proceed with your resource-intensive tasks armed with the tools and
 
 To pinpoint the suitable mode for your hash, you can utilize the following command to extract relevant information from the hashcat help documentation:
 
-```shell
-hashcat --help | grep -i ntlm
-```
+`hashcat --help | grep -i ntlm`
 
 This command will search for instances of "ntlm" within the hashcat help output, aiding you in identifying the correct mode.
 
@@ -61,9 +55,7 @@ Afterwards, inspect your hash and compare it against the provided examples withi
 
 The foundational syntax for executing hashcat commands follows this structure:
 
-```shell
-hashcat -m X -a O -d 2 <hash(stdin/file)> <wordlist>
-```
+`hashcat -m X -a O -d 2 <hash(stdin/file)> <wordlist>`
 
 Here's a breakdown of the elements involved:
 
@@ -83,10 +75,8 @@ The provided syntax gives you a basic structure for crafting your hashcat comman
 
 Utilizing rules in hashcat can significantly enhance your success rate by considering common password substitutions and patterns. Hashcat offers multiple default rule sets to assist in this process. Here's how you can incorporate rules into your hashcat command:
 
-```shell
-<hash> <wordlist> -r <rules>
-<hash> <wordlist> -r <rules> -r <rules>
-```
+`<hash> <wordlist> -r <rules>
+ <hash> <wordlist> -r <rules> -r <rules>`
 
 In this structure:
 
@@ -105,18 +95,18 @@ Brute force attacks can be particularly effective for cracking passwords, especi
 1. **Using Incremental Mode with a Minimum Length:**
    Hashcat's `--increment` flag allows it to start guessing passwords with just one character and incrementally increase the length until it successfully cracks the hash. To save time and restrict the initial character count, you can use `--increment-min=5`.
    
-   ```shell
+   `
    hashcat -m X <hash> -a 3 ?a?a?a?a?a?a?a?a --increment
-   ```
+   `
 
    !![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/vast5.png)
 
 2. **Appending Known Characters:**
    If you have knowledge of specific characters that frequently appear at the end of passwords (e.g., "123!"), you can optimize the brute force process by appending these characters to your character set. This narrows down the possibilities for the preceding characters.
 
-   ```shell
+   `
    hashcat -m 1000 -a 3 18803562CC19899140CF4C91EA6A4F2B ?l?l?l?l?l?l?l?l123!
-   ```
+   `
 
    In this example, `?l` represents lowercase letters, and `?a` represents all characters. The provided hash is targeted with the specified character set and the known ending characters.
 
@@ -132,18 +122,18 @@ Here's how to use mask attacks effectively with hashcat:
 1. **Basic Mask Attack:**
    You can create a mask that specifies the position and character types using placeholders like `?u` for uppercase letters, `?l` for lowercase letters, and `?d` for digits.
 
-   ```shell
+   `
    hashcat -a 3 -m X <hash> ?u?l?l?l?l?l?l?d
-   ```
+   `
 
    This command applies a mask attack on the provided hash. It uses uppercase letters for the first position and lowercase letters for the next six positions, followed by a digit.
 
 2. **Advanced Mask Attack with Positional Charset:**
    You can further customize your mask attack by assigning specific character sets to certain positions using `-1`, `-2`, `-3`, and so on.
 
-   ```shell
+   `
    hashcat -a 3 -m X <hash> -1 ?u?l -2 ?d?s P@sswr0rd?1?1?1?2
-   ```
+   `
 
    In this example, `-1 ?u?l` assigns the first character position to only test mixed case alphabetic characters, and `-2 ?d?s` assigns the second character position to only test numbers and special characters. The remaining part of the mask (`P@sswr0rd?1?1?1?2`) is straightforward.
 
@@ -159,18 +149,18 @@ Hybrid attacks combine the strengths of both wordlist attacks and mask attacks, 
 1. **Wordlist + Mask Hybrid Attack:**
    You can combine a wordlist with a mask to create a potent hybrid attack. This approach targets the provided hash with the wordlist entries followed by a mask.
 
-   ```shell
+   `
    hashcat -a 6 -m X <hash> <wordlist> -1 ?d?s ?u?u?1?1
-   ```
+   `
 
    In this example, the `-a 6` flag indicates a hybrid attack mode, and `-1 ?d?s` specifies that the first position should include digits and special characters. The mask `?u?u?1?1` is then applied, targeting uppercase letters and digits in subsequent positions.
 
 2. **Mask + Wordlist Hybrid Attack:**
    Alternatively, you can use a mask followed by a wordlist. This method first tests the mask pattern and then supplements it with wordlist entries.
 
-   ```shell
+   `
    hashcat -a 7 -m X <hash> ?d?d?d <wordlist>
-   ```
+   `
 
    Here, the `-a 7` flag designates the hybrid attack mode, and the mask `?d?d?d` is tested initially, followed by the wordlist entries.
 
@@ -187,31 +177,31 @@ Combinator attacks provide a way to expand wordlists by combining entries from t
    - Download or clone the hashcat-utils repository.
    - Use the `combinator` tool to combine entries from two wordlists:
 
-     ```shell
+     `
      ./combinator wordlist.txt wordlist.txt > wordlist-combined
-     ```
+     `
 
    This process generates a new wordlist called `wordlist-combined` containing combinations of words from the input wordlist.
 
 2. **Creating Delimiters for Combinator:**
    For effective combinator attacks, you might need to create delimiters. These delimiters separate the words and improve the effectiveness of the attack. You can achieve this using tools like `awk`:
 
-   ```shell
+   `
    awk '{print $0" "}' wordlist.txt > wordlist-space
-   ```
+   `
 
    Then, use the `combinator.bin` tool from hashcat-utils to combine entries from the two prepared wordlists:
 
-   ```shell
+   `
    ./combinator.bin wordlist-space wordlist.txt > wordlist-combined
-   ```
+   `
 
 3. **Applying Combinator Rules:**
    Additionally, combinator attacks can involve applying rules to each word from one or both dictionaries. You can achieve this using the `-j` (rule for left dictionary) and `-k` (rule for right dictionary) flags:
 
-   ```shell
+   `
    hashcat -a 1 -m X <hash> -j <rule_for_left> -k <rule_for_right>
-   ```
+   `
 
    This approach enhances the combinator attack by introducing rules that modify the words in the dictionaries before they are combined.
 
@@ -245,42 +235,41 @@ By profiling your target and constructing custom wordlists based on their histor
 In a specific engagement, your team obtained a ticket through a Kerberoasting attack on a Service Principal Name (SPN) within the target customer's environment. Cracking these obtained hashes is essential to potentially uncover additional attack paths and reveal further security vulnerabilities.
 
 The hash you obtained looks like this:
-```shell
+`
 $krb5tgs$23$*MSSQLSvc$CUSTOMERDOMAIN.LOCAL$MSSQLSvc/server-sap00.CUSTOMERDOMAIN.local@CUSTOMERDOMAIN.local*$blahblahblah$otherblahotherblahtoherblah...
-```
+`
 
 By analyzing the obtained SPN ticket, you can identify keywords that might prove valuable for conducting a more focused attack, such as "SAP," "SQL," "server," domain name, and others.
 
 Here's a strategy for generating a custom wordlist using classic words and terminators:
 
-```shell
+`
 ./psudohash.py -w domain,customer,sql,sap,server,qwerty,password --common-paddings-after -y 2020-2023
-```
+`
 
 After generating the custom wordlist, you can use hashcat to attempt to crack the hash:
 
-```shell
+`
 hashcat -m 13100 -a 0 ../hash.txt customwordlist.txt
-```
+`
 
 Additionally, consider employing an approach where you brute-force characters one by one, starting with a minimum of 8 characters as specified by the dumped password policy. For instance, you can attempt to brute-force characters with a known pattern at the end, such as **1914!!**:
 
-```shell
+`
 hashcat -m 13100 -a 3 ../2.hash '?u?h?l?l?h?l?l?h1914!!' -i --increment-min=8
-```
+`
 
 For information gathering, manual research and utilizing tools like DNS Dumpster or CeWL can be helpful:
 
-```shell
+`
 cewl -d 2 -m 5 -w output.txt https://target.com
-```
+`
 
 If you happen to have the hash of a specific user, like "Carlos Surname," you can search for this user's profiles on social media and create a customized wordlist using CUPP:
 
-```shell
+`
 python3 cupp.py
-# Answer the questions about the target to create an accurate wordlist
-```
+`
 
 It's important to remember that when using generated and public wordlists, it's beneficial to apply different rules if the initial attempts fail. Incorporating public rules such as "OneRuleToRuleThemAll" or creating custom rules can greatly enhance your chances of successfully cracking the passwords. By employing a combination of these strategies, you'll be well-equipped to efficiently and effectively crack SPN hashes and uncover potential attack paths.
 
