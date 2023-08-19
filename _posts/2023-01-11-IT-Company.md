@@ -18,7 +18,7 @@ The objective of this engagement was to conduct a web application penetration te
 ## Scope of evaluation
 The evaluation was focused on the exposed web application. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary 
-
+During this assessment on the target web application the team revealed a unrestricted file download vulnerabilty. An attacker could potentially download files without the need of the authentication, this could lead to data exfiltration and of private data of the customers of the target client. The team suggest to follow the remadiations guidlines. 
 ## Finding Summary
 - Unrestricted file download
 ## Attack storyline or vulnerabilities with CVSS,CVE and remedations
