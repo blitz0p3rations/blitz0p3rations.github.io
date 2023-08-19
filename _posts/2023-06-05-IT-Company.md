@@ -27,16 +27,16 @@ The assessment of the school's Content Management System (CMS) identified two cr
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
 #### Proof of Concept (PoC)
 #### Proof of Concept (PoC)
-A time-based SQL injection vulnerability was identified in the POST request sent to the endpoint "/admin/technical/MessageAction". The vulnerable parameter that can be exploited is "filter_email".
+A time-based SQL injection vulnerability was identified in the POST request sent to the endpoint `/admin/technical/MessageAction`. The vulnerable parameter that can be exploited is `filter_email`.
 
 **Vulnerable Endpoint:** /admin/technical/MessageAction
 
 **Vulnerable Parameter:** filter_email
 
 **Payload:** 
-```
+`
 1 | as' AND (SELECT 9802 FROM (SELECT(SLEEP(5)))pLMs) AND 'ddyw'='ddyw&filter_status=as
-```
+`
 
 When this payload is injected into the "filter_email" parameter, it triggers a time delay of approximately 5 seconds in the SQL query execution. This delay indicates a successful exploitation of the time-based SQL injection vulnerability.
 
