@@ -33,9 +33,7 @@ A reflected Cross-Site Scripting (XSS) vulnerability is a type of security flaw 
 #### Proof of Concept (PoC) 
 A proof of concept (PoC) has been created to demonstrate the presence of a reflected Cross-Site Scripting (XSS) vulnerability within the application. This vulnerability is found in the "where" parameter of the URL. The following payload has been injected into the parameter to trigger a JavaScript-based alert when the page is loaded:
 
-```
-/index.cfm?where=aw0e2"><img src=a onerror=alert("xss")>uybfa
-```
+`/index.cfm?where=aw0e2"><img src=a onerror=alert("xss")>uybfa`
 
 By injecting this payload, an attacker can exploit the XSS vulnerability and execute arbitrary JavaScript code within the context of a victim's browser. This could potentially lead to various malicious actions, such as stealing sensitive information, hijacking user sessions, or delivering malware.
 
