@@ -55,9 +55,7 @@ Multi-homed devices have multiple network interfaces, often connected between ad
    - Determine the size of the netblock and whether it's a segregated network with limited hosts or a complete /24 subnet.
    - Identify the DNS server, its origin (internal or external), and its relation to the network.
    - Recognize the default Gateway (GW) and differentiate it from DNS or DHCP servers.
-```bash
-ipconfig /all
-```
+`ipconfig /all`
 
 
 
@@ -69,25 +67,25 @@ ipconfig /all
      - 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
      - 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
    - If certain networks block ICMP requests, move directly to port discovery.
-```bash
-# Private IP Ranges
-# 10.0.0.0 - 10.255.255.255 (10/8 prefix)
-# 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
-# 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
 
-# Scanning 172.16.0.0/12 network for live hosts
-fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 172.16.0.0/12 > 172.16.0.0_12_up
+**Private IP Ranges**
+ ` 10.0.0.0 - 10.255.255.255 (10/8 prefix)`
+ ` 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)`
+ ` 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)`
 
-# Scanning 10.0.0.0/8 network for live hosts
-# Note: This range is quite large and may require significant time/resources
-fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 10.0.0.0/8 > 10.0.0.0_8
+ **Scanning 172.16.0.0/12 network for live hosts**
+`fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 172.16.0.0/12 > 172.16.0.0_12_up`
 
-# Scanning 192.168.0.0/16 network for live hosts
-fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 192.168.0.0/16 > 192.168.0.0_16_up
+**Scanning 10.0.0.0/8 network for live hosts**
+**Note: This range is quite large and may require significant time/resources**
+`fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 10.0.0.0/8 > 10.0.0.0_8`
 
-# Scanning 10.10.0.0/16 network for live hosts
-fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 10.10.0.0/16 > 10.10.0.0_16
-```
+**Scanning 192.168.0.0/16 network for live hosts**
+`fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 192.168.0.0/16 > 192.168.0.0_16_up`
+
+**Scanning 10.10.0.0/16 network for live hosts**
+`fping --ipv4 -b 4 -r 1 -t 250 --alive -A -g 10.10.0.0/16 > 10.10.0.0_16`
+
 
 These commands are using the `fping` tool to send ICMP echo requests (ping) to IP addresses within the specified address ranges. The `-g` flag specifies the IP range, and the `--alive` flag indicates that only live hosts should be listed. The results are being redirected to files with names indicating the range being scanned and the status of the hosts.
 
@@ -99,40 +97,32 @@ Please note that scanning large IP ranges, especially those like 10.0.0.0/8, can
    - Common port ranges: 80, 443, 53, 445, 3389, 22, 25, 110, 139, 143.
 
    1. Port Scanning with Specific Ports:
-   ```
-   80,443,53,445,3389
-   ```
+   `80,443,53,445,3389`
    This is a list of specific port numbers you want to scan for on the target hosts. These ports are commonly associated with services like HTTP (80), HTTPS (443), DNS (53), SMB (445), and Remote Desktop Protocol (3389).
 
    2. Expanded Port Scanning:
-   ```
-   80,23,443,21,22,25,3389,110,445,139,143,53
+   `80,23,443,21,22,25,3389,110,445,139,143,53
    80,23,443,21,22,25,3389,110,445,139,143,53,135,3306,8080,1723,111,995,993,
-   5900
-   ```
+   5900`
    These are more comprehensive lists of port numbers for scanning. It covers a wider range of common ports, including those for HTTP (80), Telnet (23), FTP (21), SSH (22), SMTP (25), POP3 (110), NetBIOS (139), IMAP (143), DNS (53), RPC (135), MySQL (3306), HTTP Alt (8080), PPTP (1723), RPC Bind (111), and more.
 
    3. Scanning Specific IP Ranges with `masscan`:
-   ```
+   `
    masscan -p 80,443,53,445,3389 --rate 1000 -oG 192.168.0.0_16_discovery 192.168.0.0/16
    masscan -p 80,443,53,445,3389 --rate 1000 -oG 172.16.0.0_12_discovery 172.16.0.0/12
    masscan -p 80,443,53,445,3389 --rate 1000 -oG 10.0.0.0_discovery 10.0.0.0/8
-   ```
+   `
    These commands use the `masscan` tool to scan specific IP ranges for the listed ports. The `-p` flag specifies the ports to scan, the `--rate` flag sets the scanning rate, and the `-oG` flag specifies the output format and file name. The IP ranges include private network ranges (192.168.0.0/16, 172.16.0.0/12, 10.0.0.0/8), which are commonly used in local networks.
 
 
 5. **Service Enumeration:**
    - Conduct targeted scans on ports of interest to identify active services.
-     ```bash
-      nmap -sS -sV -Pn -p[port] <ip>
-     ```
+     `nmap -sS -sV -Pn -p[port] <ip>`
 
 6. **Attacks:**
    - Focus on exploiting low-hanging fruit vulnerabilities.
    1. Command to Identify EternalBlue Vulnerability (MS17-010) in SMB:
-   ```sh
-   nmap -p445 --script smb-vuln-ms17-010 <target>
-   ```
+    `nmap -p445 --script smb-vuln-ms17-010 <target>`
    - `-p445`: Specifies that the scan should target port 445, which is the default port for SMB.
    - `--script smb-vuln-ms17-010`: This NSE script checks the target host for the presence of the MS17-010 vulnerability, commonly referred to as EternalBlue. This vulnerability affects the SMB protocol and was famously used in the WannaCry ransomware attack.
 
@@ -146,30 +136,22 @@ Please note that scanning large IP ranges, especially those like 10.0.0.0/8, can
 
 3. **Filter for Broadcast and Multicast:**
    - To capture broadcast and multicast traffic, use the following filter:
-     ```
-     (eth.dst[0] & 1)
-     ```
+     `(eth.dst[0] & 1)`
    - This filter captures traffic with the least significant bit of the destination MAC address set to 1, which indicates broadcast or multicast traffic.
 
 4. **Filter for Multicast Only:**
    - To capture multicast traffic exclusively and exclude broadcast traffic, use the following filter:
-     ```
-     (eth.dst[0] & 1) && !eth.dst==ff:ff:ff:ff:ff:ff
-     ```
+     `(eth.dst[0] & 1) && !eth.dst==ff:ff:ff:ff:ff:ff`
    - This filter combines the multicast filter with a check to exclude the broadcast MAC address.
 
 5. **Filter for VTP Traffic:**
    - To capture VLAN Trunking Protocol (VTP) traffic, use the following filter:
-     ```
-     vtp
-     ```
+     `vtp`
    - This filter specifically captures VTP protocol packets.
 
 6. **Filter for CDP Traffic:**
    - To capture Cisco Discovery Protocol (CDP) traffic, use the following filter:
-     ```
-     cdp
-     ```
+     `cdp`
    - This filter captures CDP protocol packets.
 
 Applying these filters in Wireshark allows you to focus on specific types of network traffic, making it easier to analyze and understand the behavior of your network. This can be particularly useful for identifying issues, misconfigurations, or potentially malicious activities on your network.
@@ -200,24 +182,16 @@ To prevent VLAN hopping attacks, consider the following mitigations:
 **Commands:**
 Here are the commands for configuring VLAN hopping manually, if necessary:
 1. Enable Trunking (Specific to Brand Switch):
-   ```sh
-   modprobe 802q
-   ```
+   `modprobe 802q`
 2. Add VLAN:
-   ```sh
-   vconfig add [interface] [VLAN ID]
-   vconfig add eth0 200
-   ```
+   `vconfig add [interface] [VLAN ID]
+    vconfig add eth0 200`
 3. Set Interface Up:
-   ```sh
-   ifconfig [interface.VLAN ID] up
-   ifconfig eth0.200 up
-   ```
+   `ifconfig [interface.VLAN ID] up
+    ifconfig eth0.200 up`
 4. Assign IP and Bring Interface Up:
-   ```sh
-   ifconfig [interface.VLAN ID] [new IP with correct syntax of target VLAN] up
-   ifconfig eth0.200 10.0.0.6 up
-   ```
+   `ifconfig [interface.VLAN ID] [new IP with correct syntax of target VLAN] up
+   ifconfig eth0.200 10.0.0.6 up`
 ## Vulnerabilities in Multi-Homed Devices
 **Overview:**
 Identify devices on the network, enumerate them, and attempt to exploit them to pivot towards devices that are only visible from the compromised asset. Alternatively, verify that the target is not conducting any port forwarding of a service.
@@ -231,22 +205,16 @@ Identify devices on the network, enumerate them, and attempt to exploit them to 
 **Port Forwarding and Testing:**
 As an alternative approach, if the target device is not conducting port forwarding, you can attempt the following steps:
 1. Add a VLAN and assign it to your interface (specific to brand and switch configuration):
-   ```sh
-   vconfig add [interface] [VLAN ID]
-   vconfig add eth0 200
-   ```
+   `vconfig add [interface] [VLAN ID]
+    vconfig add eth0 200`
 2. Bring up the interface with the assigned VLAN:
-   ```sh
-   ifconfig [interface.VLAN ID] up
-   ifconfig eth0.200 up
-   ```
-3. Assign an IP address to the interface on the new VLAN:
-   ```sh
-   ifconfig [interface.VLAN ID] [new IP with correct syntax of target VLAN] up
-   ifconfig eth0.200 10.0.0.6 up
-   ```
-4. Perform port forwarding of a service, setting the target IP as the gateway (DG) for your interface.
-5. Attempt to identify the service running behind the port forwarding and verify if you can access the service fully, not just the forwarded port.
+   `ifconfig [interface.VLAN ID] up
+    ifconfig eth0.200 up`
+4. Assign an IP address to the interface on the new VLAN:
+   ` ifconfig [interface.VLAN ID] [new IP with correct syntax of target VLAN] up
+    ifconfig eth0.200 10.0.0.6 up`
+5. Perform port forwarding of a service, setting the target IP as the gateway (DG) for your interface.
+6. Attempt to identify the service running behind the port forwarding and verify if you can access the service fully, not just the forwarded port.
 
 ### Refernces
 1. https://infinitelogins.com/2020/04/24/transferring-files-via-base64/
