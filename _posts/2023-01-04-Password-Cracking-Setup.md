@@ -294,3 +294,4 @@ In conclusion, the process of password cracking is a complex and multifaceted en
 3. https://in.security/technical-training/password-cracking/
 4. https://vast.ai/
 5. https://github.com/stealthsploit/OneRuleToRuleThemStill
+6. https://contest-2010.korelogic.com/rules.html
