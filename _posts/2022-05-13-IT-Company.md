@@ -27,8 +27,8 @@ During the assessment of the target web application, one significant vulnerabili
 #### Proof of Concept (PoC)
 #### Proof of Concept (PoC)
 During the assessment of the target web application, it was observed that the Swagger documentation for the application's APIs was accessible without proper authentication. The following URL led to the exposed Swagger documentation:
-```
+`
 https://example.com/swagger/index.html
-```
+`
 #### Remediations
 - Restrict access to this resource
