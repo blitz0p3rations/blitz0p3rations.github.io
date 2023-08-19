@@ -37,7 +37,7 @@ The following Proof of Concept (PoC) demonstrates a reflected Cross-Site Scripti
 
 Here's how the attack works:
 
-Injection: The attacker includes custom JavaScript code ("<script>alert(1)</script>") as the value for the "m_cFailedLoginReason" and "m_cInstance" parameters in the URL.
+Injection: The attacker includes custom JavaScript code (`<script>alert(1)</script>`) as the value for the "m_cFailedLoginReason" and "m_cInstance" parameters in the URL.
 
 Reflection: The application takes these parameter values and incorporates them into the response. Since the application fails to properly validate or sanitize the input, it reflects the injected JavaScript code back to the user's browser as part of the rendered content.
 
