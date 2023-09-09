@@ -75,8 +75,8 @@ The provided syntax gives you a basic structure for crafting your hashcat comman
 
 Utilizing rules in hashcat can significantly enhance your success rate by considering common password substitutions and patterns. Hashcat offers multiple default rule sets to assist in this process. Here's how you can incorporate rules into your hashcat command:
 
-`<hash> <wordlist> -r <rules>
- <hash> <wordlist> -r <rules> -r <rules>`
+`<hash> <wordlist> -r <rules>`
+` <hash> <wordlist> -r <rules> -r <rules>`
 
 In this structure:
 
@@ -217,7 +217,8 @@ By profiling your target and constructing custom wordlists based on their histor
 In a specific engagement, your team obtained a ticket through a Kerberoasting attack on a Service Principal Name (SPN) within the target customer's environment. Cracking these obtained hashes is essential to potentially uncover additional attack paths and reveal further security vulnerabilities.
 
 The hash you obtained looks like this:
-`$krb5tgs$23$*MSSQLSvc$CUSTOMERDOMAIN.LOCAL$MSSQLSvc/server-sap00.CUSTOMERDOMAIN.local@CUSTOMERDOMAIN.local*$blahblahblah$otherblahotherblahtoherblah...`
+`$krb5tgs$23$*MSSQLSvc$CUSTOMERDOMAIN.LOCAL$MSSQLSvc/serversap00.CUSTOMERDOMAIN.local@CUSTOMERDOMAIN.local`
+`*$blahblahblah$otherblahotherblahtoherblah...`
 
 By analyzing the obtained SPN ticket, you can identify keywords that might prove valuable for conducting a more focused attack, such as "SAP," "SQL," "server," domain name, and others.
 
