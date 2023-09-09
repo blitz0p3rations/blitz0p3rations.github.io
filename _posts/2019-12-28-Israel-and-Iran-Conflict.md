@@ -69,9 +69,9 @@ To gain access to the target, they exploted a known vuln on CheckPoint firewalls
 
 The National Cyber Security Authority (NCSA) is a government entity responsible for protecting the Israeli civilian cyber space1. It is located within the Prime Minister’s office1. The NCSA was established in 2015 to lead the operational cybersecurity efforts of the State of Israel2. The Israeli government has put significant effort into unifying the different civilian cybersecurity agencies into one single entity, called the Israel National Cyber Directorate (INCD)3. The INCD’s is part of the Israeli Prime Minister’s Office3.
 
-The INCD is responsible for coordinating and leading Israel’s national cybersecurity efforts3. It works closely with other government agencies, including the Shin Bet and Mossad3. The INCD is also responsible for developing and implementing Israel’s national cybersecurity strategy3.
+The INCD is responsible for coordinating and leading Israel’s national cybersecurity efforts3. It works closely with other government agencies, including the Shin Bet and Mossad3. The INCD is also responsible for developing and implementing Israel’s national cybersecurity strategy.
 
-The Israeli military also has a dedicated unit for cybersecurity called Unit 82003. The unit is responsible for collecting intelligence and conducting cyber operations3. Unit 8200 has been involved in several high-profile cyber operations, including the Stuxnet worm attack on Iran’s nuclear program in 20103.
+The Israeli military also has a dedicated unit for cybersecurity called Unit 82003. The unit is responsible for collecting intelligence and conducting cyber operations. Unit 8200 has been involved in several high-profile cyber operations, including the Stuxnet worm attack on Iran’s nuclear program in 20103.
 
 Cybersecurity is an important issue for Israel due to its geopolitical position. Israel has been targeted by cyber attacks from various countries, including Iran4. Cybersecurity is also important for Israel’s economy, which relies heavily on technology and innovation3.
 
