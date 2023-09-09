@@ -11,17 +11,17 @@ Password spraying is a type of brute force attack where an attacker will use a s
 
 # Password spraying blacklist bypass
 
-In order to bypass common blacklist feutures that nowdays obstacole the attacks of a potential attacker, we need to use AWS IAM proxy so that every request made by us will be passed from different regions netblock.
+In order to bypass common blacklist features that nowadays obstacle the attacks of a potential attacker, we need to use AWS IAM proxy so that every request made by us will be passed from different regions netblock.
 
 Be sure to set up a user with these roles:
 - AWSServiceRoleForOrganizations
 - AWSServiceRoleForSupport
 - AWSServiceRoleForTrustedAdvisor
 
-After that we can use [credmaster] (https://github.com/knavesec/CredMaster). 
+After that, we can use [credmaster] (https://github.com/knavesec/CredMaster). 
 
-It support differnet mode, such as OWA,O365 and others, in this example I performed the attack on the O365 of the company I work in order to test the detection of the SOC.
+It supports different modes, such as OWA, O365 and others, in this example, I performed the attack on the O365 of the company I work for in order to test the detection of the SOC.
 
-To perform the attack, just insert your AWS access keys and prepare two wordlists, one with emails adresses and one with a list of password (remember to consider the psw policy of the domain).
+To perform the attack, just insert your AWS access keys and prepare two wordlists, one with email addresses and one with a list of passwords (remember to consider the PSW policy of the domain).
 
 - `python3 credmaster.py --plugin 0365 --access_key XYZ --secret_access_key XYZ -u emails.txt -p passwords.txt -t 10`
