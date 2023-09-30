@@ -5,5 +5,8 @@ sitemap:
 ---
 User-agent: *
 Disallow: /
-
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
 Sitemap: {{ site.url }}/sitemap.xml
