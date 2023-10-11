@@ -12,13 +12,13 @@ The rise of artificial intelligence (AI) has spurred significant advancements ac
 
 # AI in Terrorism: A Double-Edged Sword
 
-AI's integration in terrorism has introduced novel tactics and amplified the scale of threats. While AI-driven tools have bolstered terrorist capabilities, its multifunctionality also raises concerns about its misuse. Key aspects include:
+AI's integration into terrorism has introduced novel tactics and amplified the scale of threats. While AI-driven tools have bolstered terrorist capabilities, their multifunctionality also raises concerns about its misuse. Key aspects include:
 
 a. AI-Enhanced Recruitment: Terrorist groups leverage AI algorithms to target individuals with personalized propaganda, exploiting their vulnerabilities to radicalize and recruit members more effectively.
 
 b. Advanced Disinformation: AI-generated deepfakes and automated misinformation campaigns deceive the public and authorities, leading to mass confusion and heightened social tensions.
 
-c. Autonomous Attacks: AI-powered drones or weaponry may be exploited by terrorists to carry out lethal, coordinated attacks, challenging defense systems' ability to detect and respond in real-time.
+c. Autonomous Attacks: AI-powered drones or weaponry may be exploited by terrorists to carry out lethal, coordinated attacks, challenging defence systems' ability to detect and respond in real time.
 
 d. Stealthy Cyber Operations: AI enables terrorists to launch sophisticated cyberattacks, causing substantial disruptions to critical infrastructure while remaining untraceable.
 
@@ -30,7 +30,7 @@ a. Surveillance and Data Collection: Governments may employ AI-based surveillanc
 
 b. Data Mining and Profiling: AI-driven algorithms analyze vast datasets, mining personal information to create detailed profiles, which could infringe on individuals' privacy rights.
 
-c. Algorithmic Bias: AI-driven surveillance may perpetuate bias, unfairly targeting certain groups based on demographic factors, raising concerns about racial or religious profiling.
+c. Algorithmic Bias: AI-driven surveillance may perpetuate bias, unfairly targeting certain groups based on demographic factors, and raising concerns about racial or religious profiling.
 
 # Legal Frameworks: Protecting Privacy Amid Security Imperatives
 
