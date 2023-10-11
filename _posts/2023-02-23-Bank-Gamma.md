@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Bank Gamma Web Applicaion PT'
+title: 'Bank Gamma Web Application PT'
 tags:
  - web
  - real-engagement
@@ -8,22 +8,22 @@ hero: https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-4.0.
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
+No images (images for the step-by-step PoC are essential as evidence but will not be provided
 ) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
 
 # Bank Gamma
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, with the goal of preventing unauthorized access, compromise and data exfiltration.
+The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, to prevent unauthorized access, compromise and data exfiltration.
 ## Scope of evaluation
 The evaluation was focused on the outside surface. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary
 The assessment of the target system identified the presence of two vulnerabilities, namely CVE-2005-2204 and CVE-2007-5923, both categorized as DOM-based Cross-Site Scripting (XSS) vulnerabilities. These vulnerabilities pose a significant security risk as they allow attackers to inject malicious scripts directly into the Document Object Model (DOM) of a web application, leading to the potential execution of arbitrary code within the context of a user's browser.
 ## Finding Summary
-- CVE-2005-2204 and CVE-2007-5923 DOM Cross Site Scripting (XSS)
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+- CVE-2005-2204 and CVE-2007-5923 DOM Cross-Site Scripting (XSS)
+## Attack storyline or vulnerabilities with CVSS, CVE and remediations
 
-### DOM Cross Site Scripting (XSS)
+### DOM Cross-Site Scripting (XSS)
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
 #### Proof of Concept (PoC)
 DOM-based XSS vulnerabilities arise when an application incorporates unvalidated user input into its dynamic content, which is subsequently processed by the browser. Exploiting these vulnerabilities can lead to unauthorized access, data theft, session hijacking, and other malicious actions, jeopardizing both the security and privacy of users.
