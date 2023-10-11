@@ -30,7 +30,7 @@ Compile a list of subdomains related to the target organization. Tools like Subl
 When acquiring a domain for phishing, consider the reputation of the domain provider. Reputable providers may have security measures against phishing domains. Opt for providers with a lower reputation to bypass such measures.
 
 Choose a domain name thoughtfully:
-- Avoid using typo or misspelled versions of the target organization's name, as they might be monitored.
+- Avoid using typos or misspelt versions of the target organization's name, as they might be monitored.
 - Instead, use generic names related to your phishing goal (e.g., "email.domain.com" for targeting email credentials).
 - Expired domain names can help evade email reputation checks.
 
@@ -42,7 +42,7 @@ Indeed, purchasing an expired domain can be an effective strategy for phishing c
 
 2. **Domain Reputation:** Look for expired domains with a good reputation and a history of legitimate use. Check for domains that have not been used for malicious activities in the past.
 
-3. **Domain History:** Investigate the history of the expired domain. Check for any signs of previous abuse or suspicious activity associated with the domain. Use tools like [Wayback Machine](https://archive.org/web/) to view the historical content of the domain.
+3. **Domain History:** Investigate the history of the expired domain. Check for any signs of previous abuse or suspicious activity associated with the domain. Use tools like [Wayback Machine](https://archive.org/web/) to view the historical context of the domain.
 
 4. **Purchase Domain:** Once you find a suitable expired domain, follow the process to purchase it. Some domain providers specialize in selling expired domains, and they often provide details about the domain's history and reputation.
 
@@ -172,10 +172,10 @@ Setting up Evilginx2 on AWS involves installing, configuring, and customizing th
 
 ## Scenario: Testing Evilginx2 and Token Theft
 
-In order to test the correct functionality of Evilginx2 and understand the process of token theft, follow this scenario:
+To test the correct functionality of Evilginx2 and understand the process of token theft, follow this scenario:
 
 1. **Choose a Valid Account:**
-   - To properly test Evilginx2, use a valid account that corresponds to the phishlet you are testing. For example, if you're testing the Office 365 phishlet, use an account that is actually associated with Office 365.
+   - To properly test Evilginx2, use a valid account that corresponds to the phishlet you are testing. For example, if you're testing the Office 365 phishlet, use an account that is associated with Office 365.
 
 2. **Access the Phishing Site:**
    - Use the lure URL you generated in Evilginx2.
@@ -208,7 +208,7 @@ In order to test the correct functionality of Evilginx2 and understand the proce
    
    ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/aws4.png)
 8. **Access the Compromised Account:**
-   - If the process was successful, the compromised token will grant you access to the targeted service (e.g., Office 365) without requiring additional authentication steps.
+   - If the process is successful, the compromised token will grant you access to the targeted service (e.g., Office 365) without requiring additional authentication steps.
    - This demonstrates how an attacker can gain unauthorized access using stolen tokens.
 
 
@@ -236,7 +236,7 @@ When you're done using Evilginx2, it's crucial to take precautions to prevent un
    - If you were using Evilginx2 on an AWS instance, consider terminating the instance when it's no longer needed. This will help minimize security risks and costs.
 
 5. **Monitor for Suspicious Activity:**
-   - Continuously monitor your environment for any signs of suspicious activity or unauthorized access, especially if you were running Evilginx2 on a live network.
+   - Continuously monitor your environment for any signs of suspicious activity or unauthorized access, especially if you are running Evilginx2 on a live network.
 
 ## Setting Up WorkMail and Amazon SES for Phishing
 
@@ -296,7 +296,7 @@ To proceed with your phishing simulation, you can set up and run Sneaky Gophish.
    - The repository provides a Dockerfile for Sneaky Gophish.
    - Build the Docker image from the provided Dockerfile: `docker build -t gophish:hardened .`
 
-3. **Create Folder for Sneaky Gophish:**
+3. **Create a Folder for Sneaky Gophish:**
    - Create a folder named `/sneaky_gophish` within the `/opt` directory.
 
 4. **Run the Docker Container:**
@@ -435,9 +435,9 @@ For instance, we can strategically use a negative margin to position our desired
 
 This manipulation showcases the challenge of relying solely on visual indicators to determine the legitimacy of an email. It's a reminder that attackers can skillfully manipulate elements to deceive recipients and make phishing emails appear more convincing. As a result, user education, vigilant security practices, and multi-layered security solutions are crucial to mitigating the risks posed by such tactics.
 
-### Other ways fo deliverign the phishing link
+### Other ways for delivering the phishing link
 
-Methods involves leveraging legitimate platforms and notifications to deliver malicious content, as you mentioned with Google Docs notifications. Here are a few other ways attackers might use to deliver phishing links:
+Methods involve leveraging legitimate platforms and notifications to deliver malicious content, as you mentioned with Google Docs notifications. Here are a few other ways attackers might use to deliver phishing links:
 
 1. **Collaboration Platforms:** Attackers might send phishing links through collaboration platforms like Microsoft Teams, Slack, or other workplace communication tools. These platforms often send notifications to users when they receive messages or invitations, creating a sense of urgency that attackers exploit.
 
@@ -493,12 +493,12 @@ To evaluate the potential spam score of your email content and improve its deliv
 - [**Mail Tester**](https://www.mail-tester.com/): Mail Tester allows you to send an email to a unique address they provide. They then analyze the content, headers, and other factors to assess the potential spam score of your email. You'll receive a detailed report with suggestions on how to improve your email's deliverability and reduce its chances of being flagged as spam.
 
 
-## Email reporting
+## Email Reporting
 Email reporting is a valuable tool for customers to monitor the effectiveness of their phishing campaigns and assess their overall security posture. These reports provide insights into recipient engagement and the impact of the campaign. Here are the key metrics typically included in email reporting:
 
 1. **Number of Emails Sent:** This metric represents the total number of phishing emails that were sent to recipients as part of the campaign. It provides a baseline for understanding the campaign's reach.
 
-2. **Number of Emails Opened:** The number of emails that were actually opened by recipients. This metric indicates the initial level of engagement with the phishing email.
+2. **Number of Emails Opened:** The number of emails that were opened by recipients. This metric indicates the initial level of engagement with the phishing email.
 
 3. **Number of Clicks:** This metric quantifies how many recipients clicked on the malicious link or interacted with the content in the email. It highlights how many individuals were potentially exposed to the threat.
 
@@ -506,7 +506,7 @@ Email reporting is a valuable tool for customers to monitor the effectiveness of
 
 5. **Geographical Distribution:** Geographical data provides insights into where the phishing emails were opened and clicked. This information can help identify regions that are more susceptible to phishing attacks and guide targeted security efforts.
 
-6. **Time-based Metrics:** Reporting can also include time-based metrics, such as when the most emails were opened or clicked. This data can reveal patterns in recipient behavior and inform the timing of future campaigns.
+6. **Time-based Metrics:** Reporting can also include time-based metrics, such as when most emails were opened or clicked. This data can reveal patterns in recipient behaviour and inform the timing of future campaigns.
 
 7. **Engagement Rate:** The engagement rate combines the number of emails opened and the number of clicks to measure how actively recipients engaged with the phishing content.
 
@@ -559,7 +559,7 @@ To defend against modern phishing vectors:
 
 - **Domain Monitoring:** Monitor domain registrations and usage to prevent attackers from creating domains that impersonate your brand.
 
-Modern phishing attacks require a multi-faceted approach, combining technological defenses, user education, and proactive threat detection. Staying informed about the latest phishing trends and continuously adapting security practices is essential to effectively mitigate the risks posed by these evolving attack vectors. 
+Modern phishing attacks require a multi-faceted approach, combining technological defences, user education, and proactive threat detection. Staying informed about the latest phishing trends and continuously adapting security practices is essential to effectively mitigate the risks posed by these evolving attack vectors. 
 
 
 ### References
