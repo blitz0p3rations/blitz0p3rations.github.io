@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'IT Company Web Applicaion PT'
+title: 'IT Company Web Application PT'
 tags:
  - web
  - real-engagement
@@ -8,13 +8,13 @@ hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
+No images (images for the step-by-step PoC are essential as evidence but will not be provided
 ) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
 
 # IT Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct a web application penetration test for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, with the goal of preventing unauthorized access, compromise and data exfiltration.
+The objective of this engagement was to conduct a web application penetration test for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, to prevent unauthorized access, compromise and data exfiltration.
 ## Scope of evaluation
 The evaluation was focused on the exposed web application. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary 
@@ -24,7 +24,7 @@ These vulnerabilities pose significant security risks and emphasize the need for
 ## Finding Summary
 - IDOR
 - Unrestricted file download
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Attack storyline or vulnerabilities with CVSS, CVE and remediations
 ### IDOR
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L 
 #### Proof of Concept (PoC)
