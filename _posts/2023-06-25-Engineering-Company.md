@@ -8,15 +8,15 @@ hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
+No images (images for the step-by-step PoC are essential as evidence but will not be provided
 ) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
 
 # Engineering Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access, compromise and data exfiltration.
+The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, to prevent unauthorized access, compromise and data exfiltration.
 ## Scope of evaluation
-The evaluation was focused on the outised surface of the organization. This scope encompassed assessing the security and potential vulnerabilities within this external surface.
+The evaluation was focused on the outside surface of the organization. This scope encompassed assessing the security and potential vulnerabilities within this external surface.
 ## Executive Summary
 The assessment of the target environment uncovered two significant findings:
 
@@ -26,10 +26,10 @@ The assessment of the target environment uncovered two significant findings:
 
 Given the seriousness of both findings, immediate attention and action are necessary to safeguard sensitive data, prevent unauthorized access, and address any potential vulnerabilities.
 ## Finding Summary
-- Credentials disclosre in JS file
+- Credentials disclosure in JS file
 - CVE-2021-44529
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
-### Credentials disclosre in JS file
+## Attack storyline or vulnerabilities with CVSS, CVE and remediations
+### Credentials disclosure in JS file
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
 The Proof of Concept (PoC) demonstrates the identification of a security issue in the "main.js" file of the application. By analyzing this file, sensitive credentials were discovered, which were then exploited to gain unauthorized access to the medical factory.
