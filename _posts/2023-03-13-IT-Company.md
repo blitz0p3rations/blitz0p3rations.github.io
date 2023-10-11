@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'IT Company Web Applicaion PT'
+title: 'IT Company Web Application PT'
 tags:
  - web
  - real-engagement
@@ -8,20 +8,20 @@ hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.
 overlay: red
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
+No images (images for the step-by-step PoC are essential as evidence but will not be provided
 ) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
 
 # IT Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct a web application penetration test for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, with the goal of preventing unauthorized access, compromise and data exfiltration.
+The objective of this engagement was to conduct a web application penetration test for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from the outside, to prevent unauthorized access, compromise and data exfiltration.
 ## Scope of evaluation
 The evaluation was focused on the exposed web application. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary 
 The assessment of the target application identified a Server-Side Request Forgery (SSRF) vulnerability. SSRF is a security vulnerability that allows an attacker to manipulate the server into making unintended network requests to internal or external resources. Exploiting this vulnerability could potentially lead to data exposure, service disruption, and unauthorized access to sensitive information.
 ## Finding Summary
 - SSRF
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Attack storyline or vulnerabilities with CVSS, CVE and remediations
 ### SSRF
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
 #### Proof of Concept (PoC)
@@ -51,6 +51,6 @@ By using the provided URLs and manipulating the `url` parameter, an attacker cou
 
 - Use DNS Resolution Safeguards: Prevent the SSRF vulnerability by using DNS resolution safeguards, such as forcing DNS resolution through a proxy that only resolves safe domains.
 
-- Avoid User-Controlled URLs: Avoid making requests to URLs provided by users unless absolutely necessary. If user-controlled URLs are needed, ensure that they go through rigorous validation and sanitization.
+- Avoid User-Controlled URLs: Avoid making requests to URLs provided by users unless necessary. If user-controlled URLs are needed, ensure that they go through rigorous validation and sanitization.
 
 - Network Segmentation: Isolate your application's server from internal systems by using network segmentation. This can prevent SSRF attacks from reaching sensitive internal resources.
