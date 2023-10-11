@@ -12,14 +12,14 @@ The following report presents a comprehensive walkthrough and analysis of a rece
 
 # Multimaster HTB
 
-## Type of activity and objectivies
+## Type of activity and objectives
 The objective of this activity is to conduct a penetration test on the target system, utilizing a machine within the same network. This test aims to assess the security posture of the target, identify vulnerabilities, and potentially exploit them to simulate real-world attack scenarios. 
 By performing this penetration test from within the same network, we can assess the effectiveness of the network segmentation and security controls while identifying potential risks that an insider threat might exploit. 
-The results of this test will provide valuable insights into the overall security of the target system and guide the implementation of necessary remediation measures to enhance its defenses.
+The results of this test will provide valuable insights into the overall security of the target system and guide the implementation of necessary remediation measures to enhance its defences.
 ## Scope of evalutaion
 The scope of evaluation for this assessment encompasses the target network and specific IP address. During this evaluation, we will focus on assessing the security of the designated network and the identified IP address. Our analysis will include identifying potential vulnerabilities, weaknesses, and areas of concern within the given network and IP range. Through thorough testing and analysis, we aim to provide valuable insights into the security posture of the target network and IP, highlighting any potential risks that may need to be addressed.
 ## Executive Summary
-The security assessment conducted on the target network revealed several critical vulnerabilities, each presenting unique risks and potential impact. These vulnerabilities were mapped to the MITRE ATT&CK framework, providing a structured perspective on their relevance and potential implications.
+The security assessment conducted on the target network revealed several critical vulnerabilities, each presenting unique risks and potential impacts. These vulnerabilities were mapped to the MITRE ATT&CK framework, providing a structured perspective on their relevance and potential implications.
 
 - **SQL Injection (SQLi)**:
   The discovery of SQL injection vulnerabilities exposes a weakness in the application's input validation. Exploiting SQLi could allow an attacker to manipulate database queries, potentially leading to unauthorized data access or data manipulation.
@@ -42,17 +42,17 @@ Each of these vulnerabilities represents a distinct avenue of attack, potentiall
 - SQLi
 - PSW Spraying
 - CVE-2020-1472
-## Attack storyline or vulnerabilties with MITRE mapping,CVE and with remediations
+## Attack storyline or vulnerabilities with MITRE mapping, CVE and with remediations
 
 T1590 - Conduct Active Scanning: The attacker initiates the reconnaissance phase by actively scanning the target network for open ports and services.
 T1046 - Network Service Scanning: The attacker employs network service scanning to identify open ports and services on the target systems.
 
-Through the port scanning results and other common enumerations techniques, the attacker identifies exposed services within the target network.
+Through the port scanning results and other common enumeration techniques, the attacker identifies exposed services within the target network.
 
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/mul1.png)
 
 ### SQLi
-SQL Injection (SQLi) is a type of cybersecurity vulnerability that occurs when an attacker is able to manipulate an application's input fields to execute arbitrary SQL (Structured Query Language) commands in a database. SQLi vulnerabilities occur primarily in web applications that use user inputs to construct database queries without proper validation or sanitization.
+SQL Injection (SQLi) is a type of cybersecurity vulnerability that occurs when an attacker can manipulate an application's input fields to execute arbitrary SQL (Structured Query Language) commands in a database. SQLi vulnerabilities occur primarily in web applications that use user inputs to construct database queries without proper validation or sanitization.
 ### PoC
 It was possible to identify a SQL Injection (SQLi) vulnerability within the target application. By exploiting this vulnerability, the team was able to extract sensitive information, including user credentials and corresponding hashes, from the application's database.
 
@@ -61,7 +61,7 @@ The following Python exploit was used for the exploitation part:
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/mul2.png)
 
 ### Remediations
-- Input Validation and Sanitization:Validate and sanitize user inputs before using them in SQL queries. Implement strict input validation by allowing only expected characters and formats.
+- Input Validation and Sanitization: Validate and sanitize user inputs before using them in SQL queries. Implement strict input validation by allowing only expected characters and formats.
 
 - Use Prepared Statements or Parameterized Queries: Utilize prepared statements or parameterized queries provided by your programming language or framework. Parameterized queries separate user inputs from SQL commands, preventing direct injection.
 
@@ -72,14 +72,14 @@ T1201 - Password Policy Discovery: The attacker's actions involve probing the pa
 
 
 ### PoC
-To identify weak password usage among the list of usernames, we employed the tool CrackMapExec. This allowed us to try a limitied sets of passwords with all user accounts. By utilizing the --continue-on-success flag, we ensured that CrackMapExec would assess the complete list of usernames, even if a valid account was discovered. This approach helps uncover instances of poor password practices that could potentially lead to unauthorized access.
+To identify weak password usage among the list of usernames, we employed the tool CrackMapExec. This allowed us to try a limited set of passwords with all user accounts. By utilizing the --continue-on-success flag, we ensured that CrackMapExec would assess the complete list of usernames, even if a valid account was discovered. This approach helps uncover instances of poor password practices that could potentially lead to unauthorized access.
 
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/mul3.png)
 
 ### Remediations
 - Account Lockout: Enforce account lockout policies to limit the number of unsuccessful login attempts for an account. This prevents attackers from continuously guessing passwords.
 
-- Multi-Factor Authentication (MFA): Implement MFA to add an additional layer of security. Even if an attacker guesses a password, they would still need a second factor to gain access.
+- Multi-Factor Authentication (MFA): Implement MFA to add a layer of security. Even if an attacker guesses a password, they would still need a second factor to gain access.
 
 - Complex Password Policies: Enforce strong password policies that require a combination of uppercase, lowercase, numbers, and special characters. Discourage the use of easily guessable passwords.
 
@@ -112,7 +112,7 @@ The PoC demonstrates the exploitation of the CVE-2020-1472 vulnerability (Zerolo
    - By targeting a user with domain admin privileges, the attacker can authenticate with their hash.
    - The attacker now has access to the domain admin rights and can perform administrative tasks, access critical systems, and potentially take control of the entire domain.
 
-The following exploit was used: https://github.com/dirkjanm/CVE-2020-1472/tree/master .
+The following exploit was used: https://github.com/dirkjanm/CVE-2020-1472/tree/master.
 
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/mul4.png)
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/mul5.png)
