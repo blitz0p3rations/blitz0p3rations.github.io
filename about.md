@@ -18,31 +18,44 @@ published: true
 
 {% include page/title.html title=page.title subtitle=page_subtitle %}
 
-Welcome to BLITZ 0p3rations ⚡!
+Welcome to the BLITZ 0p3rations Blog ⚡!
 
-"The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood."
+I am Gabi, a 23-year-old Penetration Tester working for a consulting company. With three years of experience, I have executed various types of engagements, including:
 
-"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."
+- Vulnerability Assessment
+- Internal Network Penetration Test
+- Web Application Penetration Test & API Testing
+- External Perimeter Penetration Test
+- Mobile Application Penetration Test
+- Social Engineering and Spear Phishing Simulations
+- Wireless Penetration Test
 
-I am a highly motivated 22-year-old Penetration Tester with a strong passion for physical red teaming operations and geopolitical intelligence. My career objective is to provide red team engagements that accurately emulate the tactics, techniques, and procedures of real threat actors. 
+I have successfully obtained several recognized certifications in the offensive security field:
 
-I aspire to reach a level of expertise where I can effectively emulate advanced persistent threats, similar to nation-state actors or well-funded groups. Currently, I find great satisfaction in the reconnaissance phase and obtaining initial access, mirroring the actions of adversaries who sell initial access on forums. My deep interest in intelligence and geopolitical analysis through open-source intelligence techniques drives me to continuously expand my knowledge and skillset.
+- eCCPTv2 - eLearnSecurity
+- Burp Suite Certified Practitioner - Portswigger
+- API Penetration Testing - APIsec University
 
-This is a place where I share knowledge, tactical techniques and deal with various topics related to Intelligence, Cyberwar, Hacking and other stuffs that interest me.
+My next steps are going to be CRTP -> CRTO.
 
-Please note that the views and opinions expressed here are solely my own and do not represent the perspectives of any affiliations or the company I work for.
+My career objective is to reach a level of expertise where I can effectively emulate advanced persistent threats, similar to nation-state actors or well-funded groups. 
+Currently, I specialize in web security, conducting in-depth assessments of web applications and external perimeters for tier-one companies and banks. 
 
-In the evening I enjoy:
-- Learning new techniques and attacks (including studying for certifications).
-- Emulate and replicate OSINT investigations in the Geopolitical field.
-- Studying APT groups and State sponsored operations.
+In the future, I aim to transition to performing full-spectrum red teaming operations, encompassing everything from bypassing physical access controls to cyber operations.
+My deep cross-field interest in intelligence and geopolitical analysis through open-source intelligence techniques drives me to expand my knowledge and skillset continuously.
+
+In the evening I enjoy the following:
+
+- Learning new techniques and attacks.
+- Emulating and replicating OSINT investigations in the geopolitical field.
 - Reading books.
 
-The informations in this blog are provided for research and educational purposes only. BLITZ 0p3rations does not accept any liability in any form for any direct or indirect damages resulting from the use of or reliance on the information contained in this blog.
+Currently, I am seeking a Penetration Tester position in the Netherlands, where I can continue to perform web penetration testing activities, with opportunities to engage in more internal network-related engagements through assumed breach scenarios.
 
+This blog is a platform where I share knowledge and tactical techniques, and discuss various topics related to Intelligence, Hacking, and other subjects that interest me.
+
+Please note that the views and opinions expressed here are solely my own and do not represent those of any affiliations or the company I work for.
+
+The information on this blog is provided for research and educational purposes only. BLITZ 0p3rations assumes no liability for any direct or indirect damages resulting from the use of or reliance on the information contained herein.
 
 </div>
-
-<script>
-    document.getElementsByTagName('body')[0].classList.add('glitch');
-</script>
