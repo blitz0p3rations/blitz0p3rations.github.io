@@ -18,8 +18,7 @@ The objective of this engagement was to conduct an external penetration assessme
 ## Scope of evaluation
 The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
 ## Executive Summary
-Following an external penetration test, the offensive team has identified a few misconfigurations involving exposed Telnet interfaces.
-Telnet interfaces are found to be accessible on standard ports across multiple instances, which presents significant security risks to the organization.
+Following the external penetration test, the offensive team identified several critical misconfigurations, notably involving exposed Telnet interfaces. These interfaces were found to be accessible on standard ports across multiple instances. This exposure of Telnet interfaces, particularly on standard ports, poses significant security risks to the organization. Such vulnerabilities can provide attackers with potential entry points for unauthorized access, data breaches, and other malicious activities.
 ## Finding Summary
 - Telnet exposed
 ## Risk Impact Graph with CVSS Scores
