@@ -3,18 +3,18 @@ layout: post
 title: 'Luxury Corporate External PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: 
 overlay: red
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Luxury Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the Corporate. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
+The objective of this engagement was to conduct an external penetration assessment for the corporation. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, to prevent unauthorized access and compromise.
 ## Scope of evaluation
 The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
 ## Executive Summary
@@ -22,7 +22,13 @@ Following an external penetration test, the offensive team has identified a few 
 Telnet interfaces are found to be accessible on standard ports across multiple instances, which presents significant security risks to the organization.
 ## Finding Summary
 - Telnet exposed
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/lux1.png)
+
+## Vulnerability Types Distribution
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/lux2.png)
+## Attack storyline and findings
 ### Telnet exposed 
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
