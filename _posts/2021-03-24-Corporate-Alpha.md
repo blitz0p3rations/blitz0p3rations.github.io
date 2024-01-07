@@ -3,29 +3,36 @@ layout: post
 title: 'Corporate Alpha External PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Corporate Alpha
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the Corporate. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
+The objective of this engagement was to conduct an external penetration assessment for the Corporation. The aim was to identify potential vulnerabilities that might be exploited by external sources, with the ultimate goal of preventing unauthorized access and compromise.
 ## Scope of evaluation
-The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
+The evaluation was concentrated on the specific netblock assigned to the organization. Within this defined scope, the assessment included a thorough examination of the security and potential vulnerabilities present within this network range.
 ## Executive Summary
-During the  web penetration testing conducted on Corporate Alpha, our offensive team identified critical vulnerabilities that pose potential risks to the security and integrity of the external surface. 
-The two primary vulnerabilities discovered are Cross-Site Scripting (XSS) and SQL Injection (SQLi), both of which expose the application to potential exploitation by malicious actors.
-The impact of successful exploitation could range from user data exposure to compromising user trust and brand reputation.
+During the recent web penetration testing performed on Corporate Alpha, our offensive security team identified critical vulnerabilities that significantly endanger the security and integrity of the organization's external interface. The two primary vulnerabilities uncovered were Cross-Site Scripting (XSS) and SQL Injection (SQLi). These vulnerabilities leave the application vulnerable to potential exploitation by malicious entities.
 
+The implications of successful exploitation are substantial, ranging from the exposure of user data to the erosion of user trust and damage to the company's brand reputation. The subsequent sections of this report will provide anonymized proof of concept (PoC) and detailed remediation strategies to enhance the overall security posture.
 ## Finding Summary
 - Cross Site Scripting (XSS)
 - Time Based SQL Injection (SQLi)
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/corp1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/corp2.png)
+
+## Attack storyline and findings
 ### Reflected Cross Site Scripting (XSS) 
 - CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
 
