@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Unveiling the Duality of AI in Terrorism: Balancing Security and Citizen Privacy'
+title: 'Terrorism: Balancing Security and Citizen Privacy'
 tags:
   - intelligence
   - geopolitical
