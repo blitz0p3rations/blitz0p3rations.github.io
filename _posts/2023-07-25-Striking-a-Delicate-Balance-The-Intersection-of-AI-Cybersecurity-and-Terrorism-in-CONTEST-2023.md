@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Striking a Delicate Balance: The Intersection of AI, Cybersecurity, and Terrorism in CONTEST 2023'
+title: 'The Intersection of AI, Cybersecurity, and Terrorism in CONTEST 2023'
 tags:
   - intelligence
   - geopolitical
