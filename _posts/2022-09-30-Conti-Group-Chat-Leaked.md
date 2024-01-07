@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Unveiling the Organizational Structure of CONTI Ransomware: Insights from Chat Leaks'
+title: 'Organizational Structure of CONTI Ransomware: Insights from Chat Leaks'
 tags:
   - intelligence
   - apt
