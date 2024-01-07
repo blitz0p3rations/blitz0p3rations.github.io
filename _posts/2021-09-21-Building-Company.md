@@ -3,15 +3,15 @@ layout: post
 title: 'Building Company External PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: 
 overlay: red
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
-# building Company
+# Building Company
 
 ## Type of activity and objectives
 The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
@@ -24,13 +24,21 @@ Additionally, the User Enumeration vulnerability allows attackers to gain insigh
 ## Finding Summary
 - CVE-2009-2265
 - User Enumeration
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/bu1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/bu2.png)
+
+## Attack storyline and findings
 ### CVE-2009-2265 
 - CVSS Vector: CVSS:2.0/AV:N/AC:L/Au:N/C:P/I:N/A:N
 #### Proof of Concept (PoC) 
-This exploit allows unauthenticated users to upload files and gain remote code execution on the target host. The vulnerability exist in FCKeditor and the path to upload files is unrestricted.
+This exploit permits unauthenticated users to upload files, thereby enabling remote code execution on the target host. The vulnerability is found within FCKeditor, where the file upload path is not adequately restricted.
 
-By modifying the follwing exploit https://github.com/0xConstant/CVE-2009-2265 it was possbile to gain a RCE on the target system, the user running the service was root so the team in order to test the time-response of the SOC uploaded a standard binary of Mimikatz.
+Utilizing a modified version of the exploit found at https://github.com/0xConstant/CVE-2009-2265, remote code execution (RCE) was achieved on the target system. Notably, the service was running under the 'root' user, providing extensive system access. To test the response time of the Security Operations Center (SOC), a standard binary of Mimikatz was uploaded.
 #### Remediations
 - Update ColdFusion: Ensure that your ColdFusion installation is updated to a version that includes the fix for CVE-2009-2265. Adobe, the company behind ColdFusion, has released patches and security updates to address this vulnerability. Apply the latest available patches or updates to your ColdFusion server.
 - Implement Web Application Firewall (WAF): Consider implementing a WAF that can help detect and block malicious requests attempting to exploit vulnerabilities like CVE-2009-2265. A WAF can provide an additional layer of protection for your web applications.
