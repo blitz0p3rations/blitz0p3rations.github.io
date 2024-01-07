@@ -2,8 +2,8 @@
 layout: post
 title: 'Organizational Structure of CONTI Ransomware: Insights from Chat Leaks'
 tags:
-  - intelligence
-  - apt
+  - CTI
+  - APT
 hero: https://images.unsplash.com/photo-1526898943670-92bfa9f94c12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80
 overlay: red
 ---
