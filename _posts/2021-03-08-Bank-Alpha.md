@@ -48,7 +48,7 @@ This PoC demonstrates a reflected XSS vulnerability. An attacker injected custom
 
 Attack Process:
 
-1. Injection: Custom JavaScript code (<script>alert(1)</script>) was inserted as values for "m_cFailedLoginReason" and "m_cInstance" in the URL.
+1. Injection: Custom JavaScript code (`<script>alert(1)</script>`) was inserted as values for "m_cFailedLoginReason" and "m_cInstance" in the URL.
 2. Reflection: The application incorporated these values into its response, reflecting the injected code.
 3. Execution: The code executed in the victim's browser, exemplified by an alert dialog with the number "1".
 
