@@ -28,6 +28,15 @@ In the subsequent sections of this report, detailed Proof of Concept (PoC) demon
 ## Finding Summary
 - Reflected Cross Site Scripting (XSS)
 - Exposed CMS installation directory
+
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/alpha1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/alpha2.png)
+
 ## Attack storyline and findings
 ### Reflected Cross Site Scripting (XSS) 
 - CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
