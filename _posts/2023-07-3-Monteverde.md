@@ -2,8 +2,8 @@
 layout: post
 title: 'Mantis HTB'
 tags:
-  - ctf
-  - network
+  - lab
+  - internal-network
 hero: https://images.unsplash.com/photo-1495149905644-c9f27692c2c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80
 overlay: blue
 ---
@@ -31,7 +31,7 @@ During the assessment, several notable security vulnerabilities were identified 
 - PSW Spraying
 - Credentials disclosure in a shared folder
 - Azure AD Connect password extraction
-## Attack storyline or vulnerabilities with MITRE mapping, CVE and remediations
+## Attack storyline and findings
 
 T1590 - Conduct Active Scanning: The attacker initiates the reconnaissance phase by actively scanning the target network for open ports and services.
 T1046 - Network Service Scanning: The attacker employs network service scanning to identify open ports and services on the target systems.
