@@ -18,9 +18,9 @@ The objective of this engagement was to conduct an external penetration assessme
 ## Scope of evaluation
 The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
 ## Executive Summary
-The assessment of the external infrastructure revealed two notable findings: CVE-2009-2265 and User Enumeration vulnerabilities. The CVE-2009-2265 vulnerability exposes a potential security risk in the system due to its susceptibility to arbitrary code execution. This could potentially lead to unauthorized access and manipulation of sensitive data if exploited by malicious actors.
+The assessment of the external infrastructure uncovered two significant findings: the CVE-2009-2265 vulnerability and User Enumeration vulnerabilities. The CVE-2009-2265 vulnerability represents a critical security risk due to the system's susceptibility to arbitrary code execution. If exploited, this vulnerability could allow unauthorized access and manipulation of sensitive data by malicious actors.
 
-Additionally, the User Enumeration vulnerability allows attackers to gain insights into valid usernames within the system. While seemingly innocuous, this information could be exploited as part of a larger attack, such as brute-force password guessing.
+Furthermore, the User Enumeration vulnerability enables attackers to identify valid usernames within the system. Although this might appear benign, such information can be leveraged in more complex attacks, including brute-force password guessing efforts. This vulnerability underscores the importance of robust security measures to prevent unauthorized access and safeguard sensitive data.
 ## Finding Summary
 - CVE-2009-2265
 - User Enumeration
