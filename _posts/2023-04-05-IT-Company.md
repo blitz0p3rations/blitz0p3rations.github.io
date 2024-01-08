@@ -3,13 +3,13 @@ layout: post
 title: 'IT Company Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: blue
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # IT Company
 
@@ -21,8 +21,15 @@ The evaluation was focused on the exposed web application. This scope encompasse
 The conducted assessment of the target web application revealed a medium security vulnerability known as "Clickjacking." Clickjacking is a type of attack where an attacker tricks a user into clicking on a maliciously embedded element while making it appear as if they are interacting with a legitimate part of the website. This can lead to unintended actions being performed by the user without their knowledge or consent.
 ## Finding Summary
 - Clickjacking
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
-### Clickjacking
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id3.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id4.png)
+
+## Attack storyline and findings### Clickjacking
 - CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
 #### Proof of Concept (PoC)
 A missing HTTP header (X-Frame-Options) in the target web application has left customers vulnerable to clickjacking. Clickjacking is an attack that occurs when an attacker uses a transparent iframe in a window to trick a user into clicking on an actionable item, such as a button or link, to another server in which they have an identical webpage. The attacker essentially hijacks the user activity intended for the original server and sends it to the other server. This is an attack on both the user and the server.
