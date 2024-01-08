@@ -3,13 +3,13 @@ layout: post
 title: 'Bank Gamma Android mobile PT'
 tags:
  - mobile
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFua3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60
 overlay: blue
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+} <!--break-->
 
 # Bank Gamma
 
@@ -22,7 +22,15 @@ The assessment of the Android bank account app revealed two significant findings
 ## Finding Summary
 - Root Detection bypass
 - Lack of certificate pinning
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id37.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id38.png)
+
+## Attack storyline and findings
 ### Root Detection bypass
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
