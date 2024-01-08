@@ -21,7 +21,15 @@ The evaluation was focused on the exposed web application. This scope encompasse
 During this assessment of the target web application, the team revealed an unrestricted file download vulnerability. An attacker could potentially download files without the need for authentication, this could lead to data exfiltration and private data of the customers of the target client. The team suggest following the remediation guidelines. 
 ## Finding Summary
 - Unrestricted file download
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c2.png)
+
+## Attack storyline and findings
 ### Unrestricted file download
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
 #### Proof of Concept (PoC)
