@@ -3,13 +3,13 @@ layout: post
 title: 'Bank Gamma Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFua3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60
 overlay: blue
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+<!--break-->
 
 # Bank Gamma
 
@@ -21,8 +21,15 @@ The evaluation was focused on the outside surface. This scope encompassed assess
 The assessment of the target system identified the presence of two vulnerabilities, namely CVE-2005-2204 and CVE-2007-5923, both categorized as DOM-based Cross-Site Scripting (XSS) vulnerabilities. These vulnerabilities pose a significant security risk as they allow attackers to inject malicious scripts directly into the Document Object Model (DOM) of a web application, leading to the potential execution of arbitrary code within the context of a user's browser.
 ## Finding Summary
 - CVE-2005-2204 and CVE-2007-5923 DOM Cross-Site Scripting (XSS)
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
+## Risk Impact Graph with CVSS Scores
 
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c5.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c6.png)
+
+## Attack storyline and findings
 ### DOM Cross-Site Scripting (XSS)
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
 #### Proof of Concept (PoC)
