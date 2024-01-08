@@ -7,8 +7,9 @@ hero: https://images.unsplash.com/photo-1538115081112-32c7d8401807?ixlib=rb-4.0.
 overlay: blue
 ---
 
-# Introduction
-"The Midnight Library" by Matt Haig, a book I ventured into this year, diverged from my usual genre preferences, but emerged as a positively refreshing read. The novel stands out not just for its imaginative plot but also for its profound philosophical musings on life, choices, and regrets.## Plot Overview
+"The Midnight Library" by Matt Haig, a book I ventured into this year, diverged from my usual genre preferences, but emerged as a positively refreshing read. The novel stands out not just for its imaginative plot but also for its profound philosophical musings on life, choices, and regrets. {: .lead} <!–-break-–>
+
+## Plot Overview
 introduces us to Nora Seed, a woman filled with regret and despair. Feeling she has nothing left to live for, Nora finds herself in a mystical library at the stroke of midnight. This is no ordinary library, but one where each book represents a different version of her life had she made different choices.
 
 The narrative introduces us to Nora Seed, a character engulfed in a sea of regret and despair. At a critical juncture in her life, she encounters the Midnight Library. This mystical library, which Nora discovers at the pivotal moment of midnight, is extraordinary. Each book within its walls represents a different version of her life, each born from different choices she could have made.
