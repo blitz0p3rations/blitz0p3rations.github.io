@@ -3,13 +3,13 @@ layout: post
 title: 'Bank Gamma IOS mobile PT'
 tags:
  - mobile
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFua3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60
 overlay: red
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Bank Gamma
 
@@ -18,13 +18,19 @@ The objective of this engagement was to conduct a mobile penetration assessment 
 ## Scope of evaluation
 The evaluation was focused on the Bank Account IOS Mobile app of the organization. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary
-The assessment of the Android bank account app revealed two significant findings: a root detection bypass vulnerability and the absence of certificate pinning. These vulnerabilities could expose the app and its users to potential security risks, including unauthorized access and data interception. These issues must be addressed promptly to ensure the security and integrity of the app and the sensitive financial data it handles.
+The assessment revealed two significant findings in the target application. Firstly, there was a lack of certificate pinning, which could expose the application to potential man-in-the-middle attacks, compromising the security and integrity of data transmitted between the app and its servers. Secondly, an Insecure Direct Object Reference (IDOR) vulnerability was identified, leading to the leakage of SWIFT codes and bank account information belonging to other users. These findings highlight the importance of implementing proper security measures, including certificate pinning and access control mechanisms, to mitigate these vulnerabilities and protect sensitive user data.
 ## Finding Summary
 - Lack of certificate pinning
 - IDOR
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
-The assessment revealed two significant findings in the target application. Firstly, there was a lack of certificate pinning, which could expose the application to potential man-in-the-middle attacks, compromising the security and integrity of data transmitted between the app and its servers. Secondly, an Insecure Direct Object Reference (IDOR) vulnerability was identified, leading to the leakage of SWIFT codes and bank account information belonging to other users. These findings highlight the importance of implementing proper security measures, including certificate pinning and access control mechanisms, to mitigate these vulnerabilities and protect sensitive user data.
-### Lack of certificate pinning
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c3.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c4.png)
+
+## Attack storyline and findings### Lack of certificate pinning
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
 The mobile app lacked certificate pinning, which allowed interception of requests and traffic. By exploiting this vulnerability, an attacker could potentially intercept and manipulate the app's communication with external servers. This underscores the importance of implementing proper certificate pinning to ensure the integrity and security of data exchanged between the app and its backend servers.
