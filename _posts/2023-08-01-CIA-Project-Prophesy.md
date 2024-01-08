@@ -4,8 +4,8 @@ title: 'Project Prophesy: CIA's Geopolitical Crystal Ball'
 tags:
   - intelligence
   - geopolitical
-hero: https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
-overlay: red
+hero: https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+overlay: blue
 ---
 
 The Central Intelligence Agency (CIA) is renowned for its clandestine operations and innovative intelligence initiatives. Among its covert endeavours is "Project Prophesy," a classified program designed to identify and predict potential geopolitical and economic threats through financial analysis, intelligence gathering, and data analytics. While shrouded in secrecy, real-world examples demonstrate the program's potential on-field applications and its role in safeguarding national security. {: .lead} <!–-break-–> 
