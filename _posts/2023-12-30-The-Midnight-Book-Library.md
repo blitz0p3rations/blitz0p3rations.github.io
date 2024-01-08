@@ -36,3 +36,5 @@ This quote is central to the book’s theme. It symbolizes the infinite possibil
 
 This poignant quote addresses the theme of enduring love and memory. It suggests that the people we love continue to exist in our hearts and minds, transcending physical existence. Nora’s reflections on her relationships in her various lives underscore this belief, as the people she loves continue to influence her, regardless of the life she is living.
 
+## Referances
+1. https://www.amazon.it/Midnight-Library-Matt-Haig/dp/1786892731
