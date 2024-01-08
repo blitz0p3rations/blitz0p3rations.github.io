@@ -3,27 +3,35 @@ layout: post
 title: 'Corporate Alpha External PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80
 overlay: red
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Corporate Alpha
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the Corporate. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
+The objective of this engagement was to conduct an external penetration assessment for the corporation. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, intending to prevent unauthorized access and compromise.
 ## Scope of evaluation
-The evaluation was focused on the specific netblock assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
+The evaluation was focused on the specific net block assigned to the organization. This scope encompassed assessing the security and potential vulnerabilities within this network range.
 ## Executive Summary
 ## Finding Summary
-- Cross Site Scripting (XSS)
-- Time Based SQL Injection (SQLi)
+- Cross-Site Scripting (XSS)
+- Time-Based SQL Injection (SQLi)
 - Leaked SMTP Credentials in source code
 - HTML Injection
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id17.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id18.png)
+
+## Attack storyline and findings
 ### Reflected Cross Site Scripting (XSS) 
 - CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
 #### Proof of Concept (PoC) 
