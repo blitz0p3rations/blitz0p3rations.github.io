@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'IT Company Web Applicaion PT'
+title: 'IT Company Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # IT Company
 
@@ -18,12 +18,22 @@ The objective of this engagement was to conduct a web application penetration te
 ## Scope of evaluation
 The evaluation was focused on the exposed web application. This scope encompassed assessing the security and potential vulnerabilities within this surface.
 ## Executive Summary 
-The assessment of the target system identified three critical security vulnerabilities: Path Traversal, XML External Entity (XXE) Injection and LDAP Injection. Both vulnerabilities pose significant risks to the security and integrity of the application.## Finding Summary
+The assessment of the target system revealed three critical security vulnerabilities: Path Traversal, XML External Entity (XXE) Injection, and LDAP Injection. Each of these vulnerabilities presents significant risks to the security and integrity of the application.
+
+Path Traversal exposes the system to unauthorized file access, XXE Injection could lead to data leakage or server-side request forgery, and LDAP Injection may allow unauthorized query and data manipulation within the application. The identification of these vulnerabilities highlights the need for immediate remediation to safeguard the application and protect sensitive data.
+## Finding Summary
 - Path Traversal
 - XXE
 - LDAP Injection
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
-### Path Traversal
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id13.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id14.png)
+
+## Attack storyline and findings### Path Traversal
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L
 #### Proof of Concept (PoC)
 Path traversal is a vulnerability that occurs when an attacker can manipulate file paths to access files or directories outside of the intended scope. This can lead to unauthorized access to sensitive files, including configuration files, source code, or even system files. If exploited, this vulnerability could result in a breach of confidential data or compromise the integrity of the system.
