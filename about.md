@@ -48,7 +48,7 @@ In the evening I enjoy the following:
 
 - Learning new techniques and attacks.
 - Emulating and replicating OSINT investigations in the geopolitical field.
-- Reading books.
+- Reading books about Aerospace, geopolitics and environmental sustainability.
 
 Currently, I am seeking a Penetration Tester position in the Netherlands, where I can continue to perform web penetration testing activities, with opportunities to engage in more internal network-related engagements through assumed breach scenarios.
 
