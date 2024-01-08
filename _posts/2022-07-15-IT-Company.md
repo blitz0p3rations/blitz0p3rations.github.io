@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'IT Company Web Applicaion PT'
+title: 'IT Company Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: red
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # IT Company
 
@@ -21,8 +21,15 @@ The evaluation was focused on the exposed web application. This scope encompasse
 The assessment identified Cross-Site Scripting (XSS) vulnerabilities within the target application. These vulnerabilities could potentially allow malicious attackers to inject and execute arbitrary JavaScript code in the context of other users' browsers, compromising their sessions and stealing sensitive information. The XSS vulnerabilities pose a serious threat to the confidentiality, integrity, and availability of the application and its users' data.
 ## Finding Summary
 - Cross Site Scripting (XSS)
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
-### Path Traversal
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id21.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id22.png)
+
+## Attack storyline and findings### Path Traversal
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
 #### Proof of Concept (PoC)
 Cross-Site Scripting (XSS) is a type of security vulnerability commonly found in web applications. It occurs when an attacker is able to inject malicious scripts, usually in the form of HTML or JavaScript, into a web page that is then viewed by other users. This can happen when user input is not properly validated or sanitized before being displayed on a web page.
