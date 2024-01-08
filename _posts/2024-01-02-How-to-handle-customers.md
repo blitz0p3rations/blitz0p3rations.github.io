@@ -43,8 +43,3 @@ The penetration testing report is delivered to the customer, with availability s
 ## Report Discussion
 The final phase involves discussing the report with the customer. This discussion highlights the findings in the context of their environment, demonstrating the impacts. Detailed remediation steps are provided to ensure effective resolution of identified issues.
 
-References
-Best Practices in Penetration Testing
-Effective Communication in Cybersecurity
-Client Engagement in Penetration Testing
-Professional Guidelines for Pen Testers
