@@ -24,7 +24,7 @@ There isn't a significant difference in terms of execution between white-box and
 
 #### Black-box Assessment
 
-- None, attackares must figure out by themself.
+- None, attackers must figure out by themself.
 
 ### Test Types
 
@@ -34,7 +34,7 @@ This test involves an automatic scanning of ports from each network to all other
 
 #### Network Traffic Capture
 
-In this exercise, network traffic is passively captured from all networks to identify if broadcast or multicast network traffic is allowed to pass through the firewall. If firewalls are not configured to provide complete network isolation, it's possible that broadcast traffic may pass through, potentially allowing attackers to gather useful information such as host names or IP address ranges. The presence of network protocols (such as Cisco Discovery Protocol or VLAN Trunking Protocol) that might assist attackers in identifying VLAN-related information will also be verified.
+In this exercise, network traffic is passively captured from all networks to identify if broadcast or multicast network traffic is allowed to pass through the firewall. If firewalls are not configured to provide complete network isolation, broadcast traffic may pass through, potentially allowing attackers to gather useful information such as host names or IP address ranges. The presence of network protocols (such as Cisco Discovery Protocol or VLAN Trunking Protocol) that might assist attackers in identifying VLAN-related information will also be verified.
 
 #### VLAN Hopping
 
@@ -42,7 +42,7 @@ An attempt is made to bypass VLAN segregation in network switches through a proc
 
 #### Vulnerabilities in Multi-Homed Devices
 
-Multi-homed devices have multiple network interfaces, often connected between adjacent networks. If vulnerabilities are present in these devices (such as port forwarding), an attacker can use the multi-homed device as a router and access hosts on other adjacent networks. Specific tests will be conducted to identify potentially multi-homed hosts and to discover any exploitable vulnerabilities on them.
+Multi-homed devices have multiple network interfaces, often connected between adjacent networks. If vulnerabilities are present in these devices (such as port forwarding), an attacker can use the multi-homed device as a router and access hosts on other adjacent networks. Specific tests will be conducted to identify potentially multi-homed hosts and to discover any exploitable vulnerabilities in them.
 
 ## Active Firewall Rule Assessment
 
