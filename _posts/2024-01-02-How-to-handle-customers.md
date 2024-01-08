@@ -2,12 +2,12 @@
 layout: post
 title: 'How to handle customers during pen-testing activities'
 tags:
-  - thougts
+  - thoughts
 hero: https://images.unsplash.com/photo-1507835661088-ac1e84fe645f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1562&q=80
 overlay: blue
 ---
 
-In this article, the process of customer communication and management during penetration testing activities is discussed, emphasizing the importance of clear and effective interaction from the initial assessment phase to the final report delivery.
+In this article, the process of customer communication and management during penetration testing activities is discussed, emphasizing the importance of clear and effective interaction from the initial assessment phase to the final report delivery. {: .lead} <!–-break-–>
 
 # Managing Customer Relations in Penetration Testing
 ## Scoping Phase
