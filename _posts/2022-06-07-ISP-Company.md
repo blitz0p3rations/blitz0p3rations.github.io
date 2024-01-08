@@ -2,30 +2,36 @@
 layout: post
 title: 'ISP Company network PT'
 tags:
- - network
- - real-engagement
+ - internal-network
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # ISP Company
 
 ## Type of activity and objectives
-The main objective of this engagement was to conduct an extensive network penetration test on the billing virtual machine infrastructure.
+The main objective of this engagement was to conduct an extensive network penetration test on the billing virtual machine network infrastructure.
 ## Scope of evaluation
-The evaluation was focused on the specific subents give to the team by the target organization. 
+The evaluation was focused on the specific subnets given to the team by the target organization. 
 ## Executive Summary
-Following a web applicaiton penetration test, the offensive team has identified a critical Insecure Direct Object Reference (IDOR) vulnerability. 
-This vulnerability enables regular users to elevate their privileges and bypass the paywall, gaining unauthorized access with administrative rights.
+During the assessment, several high-severity findings were revealed. The first concerned a database instance that was accessible without any required authentication. This vulnerability poses a significant risk as it could potentially allow unauthorized access to sensitive data stored in the database. The second notable finding was the discovery of an unsecured HashiCorp remote console user interface, which also lacked necessary authentication measures. This vulnerability presents a risk of unauthorized access and control over the console. Additionally, the assessment identified the use of default credentials in an SMTP setup, which is a common security risk that could lead to unauthorized access or misuse of the email server.
 ## Finding Summary
-- MongoDB wiht no Auth required
+- MongoDB with no Auth required
 - Hashicorp console web UI access
 - SNMP default credentials
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
-### MongoDB wiht no Auth required
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id15.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id16.png)
+
+## Attack storyline and findings### MongoDB with no Auth required
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
 A MongoDB instance was discovered with no authentication required, exposing sensitive data to potential unauthorized access.
