@@ -3,26 +3,33 @@ layout: post
 title: 'Betting Company external PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://plus.unsplash.com/premium_photo-1670005278847-3398f72aecdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
 overlay: red
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Betting Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, to prevent unauthorized access, compromise and data exfiltration.
+The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that might be exploited by external sources, with the ultimate goal of preventing unauthorized access and compromise.
 ## Scope of evaluation
 The evaluation was focused on the outside surface of the organization. This scope encompassed assessing the security and potential vulnerabilities within this external surface.
 ## Executive Summary
 The assessment revealed a Cross-Site Scripting (XSS) vulnerability in the web application. This vulnerability could potentially allow attackers to inject malicious scripts into the application, leading to the execution of arbitrary code or the theft of sensitive information. It is recommended that appropriate remediation steps be taken to address this security issue and ensure the protection of user data and the application's integrity.
 ## Finding Summary
 - Cross-Site Scripting (XSS)
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
-### Cross-Site Scripting (XSS)
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id21.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id22.png)
+
+## Attack storyline and findings### Cross-Site Scripting (XSS)
 - CVSS Vector: None
 #### Proof of Concept (PoC) 
 The provided Proof of Concept demonstrates an example of a Cross-Site Scripting (XSS) vulnerability within the target CMS. In this case, the payload is injected into the "payment provider" parameter. The payload used is:
