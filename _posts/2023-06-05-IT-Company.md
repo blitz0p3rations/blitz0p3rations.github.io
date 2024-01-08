@@ -3,13 +3,13 @@ layout: post
 title: 'IT Company Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: red
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # IT Company
 
@@ -22,10 +22,17 @@ The assessment of the school's Content Management System (CMS) identified two cr
 ## Finding Summary
 - SQL Injection (SQLi)
 - Unrestricted file upload
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c15.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c16.png)
+
+## Attack storyline and findings
 ### SQL Injection (SQLi)
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
-#### Proof of Concept (PoC)
 #### Proof of Concept (PoC)
 A time-based SQL injection vulnerability was identified in the POST request sent to the endpoint `/admin/technical/MessageAction`. The vulnerable parameter that can be exploited is `filter_email`.
 
