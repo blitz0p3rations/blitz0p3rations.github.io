@@ -3,13 +3,13 @@ layout: post
 title: 'IT Company Web Application PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80
 overlay: red
 ---
 
-No images (images for the step-by-step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # IT Company
 
@@ -27,8 +27,15 @@ During the assessment, two critical security vulnerabilities were identified in 
 ## Finding Summary
 - Admin dashboard accessible from Guest user
 - Unrestricted file download
-## Attack storyline or vulnerabilities with CVSS, CVE and remediations
-### Admin dashboard accessible from Guest user
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c11.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/c12.png)
+
+## Attack storyline and findings### Admin dashboard accessible from Guest user
 - CVSS Vector: None 
 #### Proof of Concept (PoC)
 It was observed that the admin dashboard could be accessed by manipulating the URL path through fuzzing activities, even from a guest account. By attempting different variations of URL paths and parameters, a guest user was able to discover a specific path that led to the admin dashboard. This unauthorized access allowed the guest user to view sensitive administrative information and perform actions intended only for privileged users.
