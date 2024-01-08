@@ -3,18 +3,18 @@ layout: post
 title: 'Freeze Company External PT'
 tags:
  - web
- - real-engagement
+ - real-activity
 hero: https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80
 overlay: blue
 ---
 
-No images (image for the step by step PoC are essential as evidence but will not be provided
-) or references will be provided, as this assessment was a real engagement. Additionally, all URLs and functionalities have been anonymized to ensure privacy and compliance with non-disclosure agreements (NDAs). {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
+ <!--break-->
 
 # Freeze Company
 
 ## Type of activity and objectives
-The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that could potentially be exploited from outside sources, with the goal of preventing unauthorized access and compromise.
+The objective of this engagement was to conduct an external penetration assessment for the organization. The aim was to identify potential vulnerabilities that might be exploited by external sources, with the ultimate goal of preventing unauthorized access and compromise.
 ## Scope of evaluation
 The evaluation was focused on the external surface of the organization. This scope encompassed assessing the security and potential vulnerabilities within this external surface.
 ## Executive Summary
@@ -28,8 +28,15 @@ To address these vulnerabilities, swift actions are essential. The organization 
 ## Finding Summary
 - SQLi to RCE (0day)
 - Exposed .git with SMS API secrets
-## Attack storyline or vulnerabilities with CVSS,CVE and remedations
-### SQLi to RCE (0day)
+## Risk Impact Graph with CVSS Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id19.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id20.png)
+
+## Attack storyline and findings### SQLi to RCE (0day)
 - CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
 #### Proof of Concept (PoC) 
 The vulnerability allowed an attacker to execute SQL injection attacks through the login form. This posed a severe risk to the confidentiality and integrity of the application's data.
@@ -52,7 +59,7 @@ The application has been used for conducting mail exchanges for over a decade.
 ### Exposed .git with SMS API secrets
 - CVSS Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:H
 #### Proof of Concept (PoC) 
-During the assessment of the target web application, a .git folder was discovered containing the application's source code and hardcoded secrets for the SMS API service. This presents a significant security concern as unauthorized access to these secrets could potentially lead to misuse of the service, enabling malicious actors to conduct phishing campaigns and impersonation attacks. The path to the exposed .git configuration file is as follows: "documents.target.com/.git/config". It is crucial that immediate action is taken to secure these secrets and prevent unauthorized access to sensitive information.
+During the assessment of the target web application, a .git folder was discovered containing the application's source code and hardcoded secrets for the SMS API service. This presents a significant security concern as unauthorized access to these secrets could potentially lead to misuse of the service, enabling malicious actors to conduct phishing campaigns and impersonation attacks. The path to the exposed .git configuration file is as follows: "documents.target.com/.git/config". Immediate action must be taken to secure these secrets and prevent unauthorized access to sensitive information.
 #### Remediations
-- Adjust permission on that specif folder
+- Adjust permission on that specific folder
 - Restrict access to mitigate
