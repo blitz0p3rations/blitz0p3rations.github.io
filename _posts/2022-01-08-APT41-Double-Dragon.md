@@ -8,8 +8,7 @@ hero: https://images.unsplash.com/photo-1470635824525-7f1f1e5a4ebc?ixlib=rb-4.0.
 overlay: red
 ---
 
-APT41, a sophisticated Chinese state-sponsored cyber-espionage group, is known for its highly advanced and persistent attacks targeting multiple industries worldwide. {: .lead} 
-  {: .lead} <!–-break-–> 
+APT41, a sophisticated Chinese state-sponsored cyber-espionage group, is known for its highly advanced and persistent attacks targeting multiple industries worldwide. {: .lead} <!–-break-–>
 
 # Threat Actor Profile
 
