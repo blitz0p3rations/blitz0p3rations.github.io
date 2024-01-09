@@ -30,6 +30,16 @@ The outcome was administrative access to several domain servers, facilitated by 
 ## Finding summary
 - PrintNightmare to local admin
 - PTH to admin on juicy machines
+
+## Risk Impact Graph Severity Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad3.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad4.png)
+
+
 ## Attack storyline and findings
 
 
