@@ -8,8 +8,7 @@ hero: https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.
 overlay: blue
 ---
 
-Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
- <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead} <!–-break-–>
 
 # Law Corporate
 
