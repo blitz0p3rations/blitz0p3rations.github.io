@@ -8,7 +8,7 @@ hero: https://images.unsplash.com/photo-1507835661088-ac1e84fe645f?ixlib=rb-4.0.
 overlay: blue
 ---
 
-In an age where digital surveillance and governmental control have become pervasive, a few individuals have emerged as whistleblowers, putting their lives on the line to safeguard humanity's fundamental rights of privacy and freedom of speech. Edward Snowden, Julian Assange, and Daniel Hale are among these courageous individuals who have exposed the dark truth about the erosion of Western countries' values, where personal freedom and privacy have taken a backseat to the pursuit of unchecked power. This article explores the profound impact of their actions, shedding light on how their sacrifices have sparked a global conversation about the value of individual liberties in modern societies. {: .lead} <!–-break-–> 
+In an age where digital surveillance and governmental control have become pervasive, a few individuals have emerged as whistleblowers, putting their lives on the line to safeguard humanity's fundamental rights of privacy and freedom of speech. Edward Snowden, Julian Assange, and Daniel Hale are among these courageous individuals who have exposed the dark truth about the erosion of Western countries' values, where personal freedom and privacy have taken a backseat to the pursuit of unchecked power. This article explores the profound impact of their actions, shedding light on how their sacrifices have sparked a global conversation about the value of individual liberties in modern societies. {: .lead} <!–-break-–>
 
 # Edward Snowden - Unveiling Mass Surveillance
 
