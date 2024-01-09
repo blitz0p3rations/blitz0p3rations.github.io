@@ -8,9 +8,7 @@ hero: https://images.unsplash.com/photo-1470635824525-7f1f1e5a4ebc?ixlib=rb-4.0.
 overlay: blue
 ---
 
-Cyber warfare, involving the use of cyber capabilities by nation-states or state-sponsored groups for offensive operations, is explored in this article, focusing on its technical aspects, geopolitical implications, and the potential damages it can inflict. We examine real examples of significant cyberattacks, highlighting their impact on global politics and national security. {: .lead} 
- {: .lead} <!–-break-–> 
-
+Cyber warfare, involving the use of cyber capabilities by nation-states or state-sponsored groups for offensive operations, is explored in this article, focusing on its technical aspects, geopolitical implications, and the potential damages it can inflict. We examine real examples of significant cyberattacks, highlighting their impact on global politics and national security. {: .lead} <!–-break-–>
 # Introduction
 Cyber warfare refers to the use of cyber capabilities by nation-states or state-sponsored groups to conduct offensive operations against other countries or entities. These operations aim to disrupt, damage, or gain unauthorized access to critical infrastructure, networks, and information systems.
 # Technical Aspects of Cyber Warfare
