@@ -9,9 +9,7 @@ overlay: blue
 ---
 
 
-The Cybersecurity and Infrastructure Security Agency (CISA) recently disclosed a sophisticated cyber intrusion targeting a government agency's critical infrastructure. This article delves into the attacker's methods, techniques, and potential motivations, as documented by CISA analysts, providing a comprehensive breakdown of the attack. {: .lead} 
-
-<!--break-->
+The Cybersecurity and Infrastructure Security Agency (CISA) recently disclosed a sophisticated cyber intrusion targeting a government agency's critical infrastructure. This article delves into the attacker's methods, techniques, and potential motivations, as documented by CISA analysts, providing a comprehensive breakdown of the attack. {: .lead} <!–-break-–>
 
 # Initial Access and Credential Exploitation
 
