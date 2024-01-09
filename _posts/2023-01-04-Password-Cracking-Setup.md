@@ -7,7 +7,7 @@ hero: https://plus.unsplash.com/premium_photo-1673543763969-1d54002352d0?ixlib=r
 overlay: red
 ---
 
-Using cloud-rented GPUs (Graphics Processing Units) to perform highly resource-intensive tasks offers cost savings, scalability, accessibility, and reduced operational overhead. {: .lead} <!--break-->
+Using cloud-rented GPUs (Graphics Processing Units) to perform highly resource-intensive tasks offers cost savings, scalability, accessibility, and reduced operational overhead. {: .lead} <!–-break-–>
 
 ## VAST AI connection and istance setup
 ![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/img0.png)
