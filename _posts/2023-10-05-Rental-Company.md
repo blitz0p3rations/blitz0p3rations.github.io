@@ -31,7 +31,9 @@ Additionally, on the target, a Broken Access Control scenario (IDOR) was detecte
 - CVE-2021-39226 (Snapshot authentication bypass)
 ## Risk Impact Graph with CVSS Scores
 
+
 ## Vulnerability Types Distribution
+
 
 
 
