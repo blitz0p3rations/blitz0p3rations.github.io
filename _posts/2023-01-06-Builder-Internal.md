@@ -27,6 +27,15 @@ In the second kill chain, the team managed to obtain Domain Admin privileges and
 ## Finding summary
 - Kerberoasting to accessing Business Intelligence (Sharepoint)
 - Kerberoasting to Domain Admin
+
+## Risk Impact Graph Severity Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad2.png)
+
 ## Attack storyline and findings
 
 1. **Information Gathering with Bloodhound and ADExplorer (T1087, T1069)**: Using tools like Bloodhound and ADExplorer to gather information about the infrastructure aligns with Discovery techniques in MITRE, specifically Account Discovery (T1087) and Permission Groups Discovery (T1069). These techniques involve identifying user accounts and understanding group memberships within an Active Directory environment.
