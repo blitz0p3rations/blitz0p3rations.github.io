@@ -31,10 +31,11 @@ The final vulnerability discovered allows an unauthenticated user to access docu
 - Unrestricted File Download
 ## Risk Impact Graph with CVSS Scores
 
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad5.png)
 
 ## Vulnerability Types Distribution
 
-![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id4.png)
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad6.png)
 
 ## Attack storyline and findings
 ### Clickjacking
