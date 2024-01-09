@@ -29,6 +29,7 @@ Another significant discovery relates to the possibility of obtaining password h
 - Telnet opened without credentials
 ## Risk Impact Graph with CVSS Scores
 
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/id3.png)
 
 ## Vulnerability Types Distribution
 
