@@ -8,8 +8,7 @@ hero:
 overlay: red
 ---
 
-Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead}
- {: .lead} <!--break-->
+Please note that for this proof of concept, while images and step-by-step reproduction tips are fundamental for evidentiary purposes, they will not be supplied. Furthermore, in adherence to our commitment to privacy and compliance with non-disclosure agreements, all URLs and functionalities within this assessment have been anonymized. {: .lead} <!–-break-–>
 
 # Disclaimer 
 In this report, a deliberate approach will be taken to avoid discussing specific vulnerabilities and the detailed intricacies of banks' infrastructure. This decision is rooted in the sensitive nature of such information and the potential risks associated with its disclosure. The primary objective is to safeguard the confidentiality of this data, thereby upholding the security of these institutions.
