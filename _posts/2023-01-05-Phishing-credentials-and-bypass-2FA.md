@@ -9,7 +9,7 @@ overlay: red
 
 Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
 
-It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. {: .lead} <!--break-->
+It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. {: .lead} <!–-break-–>
 
 Before setting up a phishing campaign, it's crucial to assess misconfigurations within the targeted domains. Exploiting these misconfigurations can make the phishing setup more effective. Here are some steps to consider:
 
