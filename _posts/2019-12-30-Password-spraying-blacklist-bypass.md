@@ -7,7 +7,7 @@ hero: https://images.unsplash.com/photo-1541955193702-9ca03b1bb11a?ixlib=rb-4.0.
 overlay: red
 ---
 
-Password spraying is a type of brute force attack where an attacker will use a small list of commonly used passwords, that may match the complexity policy of the domain. {: .lead} <!–-break-–> 
+Password spraying is a type of brute force attack where an attacker will use a small list of commonly used passwords, that may match the complexity policy of the domain. {: .lead} <!–-break-–>
 
 # Password spraying blacklist bypass
 
