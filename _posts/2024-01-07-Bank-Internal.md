@@ -1,3 +1,14 @@
+---
+layout: post
+title: 'Bank Internal PT via Assume Breach'
+tags:
+  - internal-network
+  - AD
+  - real-activity
+hero: https://images.unsplash.com/photo-1507835661088-ac1e84fe645f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1562&q=80
+overlay: blue
+---
+
  {: .lead} <!–-break-–> 
 
 # Bank Internal network via assume breach 
