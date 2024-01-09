@@ -25,6 +25,15 @@ During the enumeration of the Active Directory environment, the team identified 
 The simulation also included stress-testing the hosts to evaluate the effectiveness of existing detection measures. The results indicated almost no detection capabilities, as every step attempted by the team was completed without encountering any issues. This finding highlights significant deficiencies in the network's intrusion detection and response mechanisms, pointing to the need for substantial improvements in the hospital's cybersecurity posture.
 ## Finding summary
 - Kerberoasting to Domain Admin
+
+## Risk Impact Graph Severity Scores
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad1.png)
+
+## Vulnerability Types Distribution
+
+![](https://raw.githubusercontent.com/blitz0p3rations/blitz0p3rations.github.io/master/uploads/ad2.png)  
+
 ## Attack storyline and findings
 
 The team's approach and findings align with various tactics and techniques identified in the MITRE ATT&CK framework, particularly concerning privilege escalation and credential access within an Active Directory environment.
