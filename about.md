@@ -20,7 +20,7 @@ published: true
 
 Welcome to the BLITZ 0p3rations Blog ⚡!
 
-I am Gabi, a 23-year-old Penetration Tester working for a consulting company. With three years of experience, I have executed various types of engagements, including:
+I am Gabi, a 24-year-old Penetration Tester working for a consulting company. With three years of experience, I have executed various types of engagements, including:
 
 - Vulnerability Assessment
 - Internal Network Penetration Test
@@ -36,7 +36,7 @@ I have successfully obtained several recognized certifications in the offensive 
 - Burp Suite Certified Practitioner - Portswigger
 - API Penetration Testing - APIsec University
 
-My next steps are going to be CRTP -> CRTO.
+My next steps are going to be OSCP -> CRTO.
 
 My career objective is to reach a level of expertise where I can effectively emulate advanced persistent threats, similar to nation-state actors or well-funded groups. 
 Currently, I specialize in web security, conducting in-depth assessments of web applications and external perimeters for tier-one companies and banks. 
@@ -49,8 +49,6 @@ In the evening I enjoy the following:
 - Learning new techniques and attacks.
 - Emulating and replicating OSINT investigations in the geopolitical field.
 - Reading books about Aerospace, geopolitics and environmental sustainability.
-
-Currently, I am seeking a Penetration Tester position in the Netherlands, where I can continue to perform web penetration testing activities, with opportunities to engage in more internal network-related engagements through assumed breach scenarios.
 
 This blog is a platform where I share knowledge and tactical techniques, and discuss various topics related to Intelligence, Hacking, and other subjects that interest me.
 
