@@ -21,14 +21,15 @@ published: true
 Welcome to the BLITZ 0p3rations Blog ⚡!
 
 I'm Gabi, a Security Consultant with 5 years. Throughout my career, I’ve supported clients in financial services, critical infrastructure, and enterprise environments, performing:
-- Vulnerability Assessment
-- Network Penetration Testing 
-- Web Application Penetration Testing
-- API Penetration Testing
-- Desktop/Thick-Client Application Penetration Testing
-- Mobile Application Penetration Testing (iOS/Android)
+- Vulnerability Assessment & Management
+- Network Security Assessment 
+- Web Application Security Assessment
+- API Security Assessment
+- Desktop/Thick-Client Application Security Assessment
+- Mobile Application Security Assessment (iOS/Android)
 - Social Engineering and Spear Phishing Simulations
-- Wireless Penetration Testing
+- Wireless Security Assessment
+- LLM Security Assessment
 - Purple Teaming
 - Adversarial Simulations
 - Active Directory Security Reviews
@@ -38,7 +39,6 @@ I hold several industry-recognized certifications, including:
 
 - eCCPTv2 - eLearnSecurity
 - Burp Suite Certified Practitioner - Portswigger
-- API Penetration Testing - APIsec University
 - CRTP
 
 …and I’m currently preparing for the CRTO.
